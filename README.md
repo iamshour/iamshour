@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 # Connect with me<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 
-  <a href="https://www.linkedin.com/in/alishour/" target="_blank" >
+  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alishour/"  >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
   </a> &nbsp;&nbsp;
   <a href="https://twitter.com/AliShourr">
