@@ -1,4 +1,7 @@
 ## Hey there! &nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="29px">
+<br />
+<br />
+Hi, I'm Ali Shour, a Full Stack Web Developer & UI designer 🚀 from Lebanon, currently taking freelance opportunities by helping out small businesses stand out. I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
 
 <!--
 **iamshour/iamshour** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
