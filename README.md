@@ -1,4 +1,4 @@
-### Hey there! <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Hi.gif" width="29px">
+### Hey there! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Hi.gif" width="29px">
 
 <!--
 **iamshour/iamshour** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,13 +15,13 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-# My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
+## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
 
 ![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
 
 <br><br>
 
-# Connect with me <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
+# Connect with me &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alishour/"  >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
