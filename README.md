@@ -32,4 +32,4 @@ Here are some ideas to get you started:
 
 <br><br>
 
-[link](https://www.linkedin.com/in/alishour/){:target="_blank"}
+[Google](https://google.com" target="_blank)
