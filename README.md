@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 # Connect with me<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 
-  <a href="https://www.linkedin.com/in/alishour/">
+  <a href="https://www.linkedin.com/in/alishour/" target="_blank" >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
   </a> &nbsp;&nbsp;
   <a href="https://twitter.com/AliShourr">
@@ -29,24 +29,5 @@ Here are some ideas to get you started:
   <a href="mailto:aliahmadshour@gmail.com">
     <img align="left" alt="Ali Shour | Gmail" width="26px" src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504727.png?token=exp=1642116584~hmac=b42fac8ca4244afdd573a88ef5f911a0" />
   </a>
-
-
-<br><br>
-
-# Connect with me<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
-
-  <a href="https://www.linkedin.com/in/satyam-goyal26/">
-    <img align="left" alt="Satyam Goyal | Linkedin" width="24px" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Linkedin.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="https://twitter.com/SatYug26">
-    <img align="left" alt="Satyam Goyal | Twitter" width="26px" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Twitter.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="https://www.instagram.com/satyu.26/">
-    <img align="left" alt="Satyam Goyal | Instagram" width="24px" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Instagram.svg" />
-  </a> &nbsp;&nbsp;
-  <a href="mailto:goyalsatyam8@gmail.com">
-    <img align="left" alt="Satyam Goyal | Gmail" width="26px" src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Gmail.svg" />
-  </a>
-
 
 <br><br>
