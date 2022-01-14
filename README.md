@@ -42,7 +42,7 @@ Here are some ideas to get you started:
 ![Next.js](https://img.shields.io/badge/-Next-black?style=flat-square&logo=Next.js)
 
 - 🛢 &nbsp; Back-end: &nbsp;
-![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
 ![Express.js](https://img.shields.io/badge/-Express-black?style=flat-square&logo=expressjs)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
 ![Npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm)
