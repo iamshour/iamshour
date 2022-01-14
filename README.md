@@ -1,4 +1,4 @@
-## Hey there! &nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="29px">
+# Hey there! &nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="29px">
 <br />
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
 
@@ -18,17 +18,20 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
 -->
 
 ## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
-
-![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
-
+<br />
+<p align="right">
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=alexnaiman&theme=tokyonight&show_icons=true" />
+<img  float="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexnaiman&theme=tokyonight&show_icons=true" />
+</p>
 <br />
 <br />
 
 ## Connect with me &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
-
+<br />
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alishour/"  >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
   </a> &nbsp;&nbsp;
