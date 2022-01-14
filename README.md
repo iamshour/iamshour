@@ -1,4 +1,8 @@
-# Hey there! &nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="29px">
+<img align="center" width="80%" height="120" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
+
+<br>
+
+# Greetings, fellow coders! &nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="29px">
 <br />
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
 
