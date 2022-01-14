@@ -64,6 +64,13 @@ Here are some ideas to get you started:
 
 <br />
 
+<h3> 🛠 &nbsp;Pro certifications by:</h3>
+
+![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
+![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
+
+<br />
+
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
 <br />
