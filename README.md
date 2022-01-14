@@ -61,7 +61,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<div align="right">
+<div align="right" width="100%">
 <a href="https://github.com/iamshour">
   <img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" />
 </a>
