@@ -8,6 +8,8 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <!--
 **iamshour/iamshour** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
+
+
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
@@ -22,6 +24,7 @@ Here are some ideas to get you started:
 ## Technologies & Tools 🔧
 -->
 
+<iframe src="https://giphy.com/embed/ln7z2eWriiQAllfVcn" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/devrock-javascript-edr-escueladevrock-ln7z2eWriiQAllfVcn">via GIPHY</a></p>
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
