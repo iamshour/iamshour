@@ -74,19 +74,21 @@ Here are some ideas to get you started:
 
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
-<br />
+<div align="center" >
+  
+<a  href="https://github.com/iamshour">
+  
+<img width="49%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
+<img width="49%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" href="https://github.com/sp-xd" />
 
-<p align="center">
-  <img width="49%" align="center src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" height="210" />
-  <span>&nbsp;</span>
-  <img width="49%" align="center src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
-</p>
+</a>
 
-<br />
-<br />
+<hr></hr>
 
 <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's github streak" width="400" height="210" />
 
+</div>
+  
 <br />
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
