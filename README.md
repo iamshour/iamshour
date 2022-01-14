@@ -34,6 +34,7 @@ Here are some ideas to get you started:
 - 🛢 &nbsp; Back-end: &nbsp;
 ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm)
 
 - 🖌 &nbsp; UI Frameworks: &nbsp;
 ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
@@ -43,6 +44,7 @@ Here are some ideas to get you started:
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![Netlify](https://img.shields.io/badge/-Netlify-000000?style=flat-square&logo=netlify)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=ffffff)
 
 - 🔧 &nbsp; Editors: &nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
