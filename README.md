@@ -62,7 +62,8 @@ Here are some ideas to get you started:
 
 <br />
 
-## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
+<h3> <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats</h3>
+
 <br />
 <p align="right">
 <img align="left" src="https://github-readme-stats.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" />
