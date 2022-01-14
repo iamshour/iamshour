@@ -63,6 +63,7 @@ Here are some ideas to get you started:
 <p align="right">
 <img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" />
 <img  float="right" src="https://https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" />
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamshour)](https://github.com/iamshour)
 </p>
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
