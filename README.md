@@ -66,6 +66,8 @@ Here are some ideas to get you started:
   <img align="right" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" />
 </p>
 
+<br />
+
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
 
