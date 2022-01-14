@@ -24,10 +24,9 @@ Here are some ideas to get you started:
 ## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
 <br />
 <p align="right">
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=iashour=tokyonight&show_icons=true" />
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=iamshour=tokyonight&show_icons=true" />
 <img  float="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" />
 </p>
-<br />
 <br />
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
