@@ -60,6 +60,8 @@ Here are some ideas to get you started:
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
+
+<!--
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alishour/"  >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
   </a> &nbsp;&nbsp;
@@ -73,11 +75,13 @@ Here are some ideas to get you started:
     <img align="left" alt="Ali Shour | Gmail" width="26px" src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504727.png?token=exp=1642116584~hmac=b42fac8ca4244afdd573a88ef5f911a0" />
   </a>
 <br />
+-->
 
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:aliahmadshour@gmail.com)](mailto:aliahmadshour@gmail.com)
 [![DEV Badge](https://img.shields.io/badge/-DEV.to-000?style=flat-square&logo=dev.to&logoColor=white&link=https://dev.to/iamshour)](https://dev.to/iamshour)
 [![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=96171230387&text=Hi!)](https://api.whatsapp.com/send?phone=96171230387&text=Hi!)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-1da1f2?style=flat-square&labelColor=1da1f2&logo=twitter&logoColor=white&link=https://twitter.com/AliShourr/)](https://twitter.com/AliShourr/)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=iamshour)
 
 <br />
 <br />
