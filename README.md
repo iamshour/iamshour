@@ -44,5 +44,6 @@ Here are some ideas to get you started:
     <img align="left" alt="Ali Shour | Gmail" width="26px" src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504727.png?token=exp=1642116584~hmac=b42fac8ca4244afdd573a88ef5f911a0" />
   </a>
 
-<br><br>
-
+<br />
+<br />
+<img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="20%" margin="0 auto">
