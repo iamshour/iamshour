@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 -->
 
 ## Technologies & Tools 🔧
-<br />
+
 ### Frontend
 <br />
 
@@ -32,7 +32,6 @@ Here are some ideas to get you started:
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![React](https://img.shields.io/badge/-React-%23282C34?style=flat-square&logo=react)
 
-<br />
 ### Back-end
 <br />
 
