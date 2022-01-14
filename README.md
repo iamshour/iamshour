@@ -61,7 +61,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<p align="right" >
+<p align="center" >
   
   <img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" />
   
