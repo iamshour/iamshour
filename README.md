@@ -1,4 +1,4 @@
-<img align="center" width="80%" height="120" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
+<img align="center" width="80%" height="120" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
 
 <br>
 
