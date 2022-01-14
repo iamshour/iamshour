@@ -86,7 +86,9 @@ Here are some ideas to get you started:
 
 <br />
 
-<h3> 🛠 &nbsp;Pro certifications by:</h3>
+<h3> 📜 &nbsp;Certified by:</h3>
+
+<br>
 
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
 ![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
