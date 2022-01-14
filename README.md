@@ -79,13 +79,13 @@ Here are some ideas to get you started:
 <a  href="https://github.com/iamshour">
   
 <img width="49%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
-<img width="49%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" href="https://github.com/sp-xd" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
 
 </a>
 
 <hr></hr>
 
-<img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's github streak" width="400" height="210" />
+<img align="center" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github streak" width="400" height="210" />
 
 </div>
   
