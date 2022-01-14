@@ -77,7 +77,7 @@ Here are some ideas to get you started:
 <br />
 
 <p align = "center">
-  <img src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" height="210" />
+  <img src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" height="210" width="450" />
   <img src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
 </p>
 
