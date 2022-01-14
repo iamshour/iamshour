@@ -62,7 +62,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h3> <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats</h3>
+## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
 <br />
 <p align="right">
