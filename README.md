@@ -19,13 +19,13 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 ![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
+## Technologies & Tools 🔧
 -->
 
-## Technologies & Tools 🔧
 
-### Frontend
-<br />
+<h3> 🔧 &nbsp;Tech Stack</h3>
 
+- 💻 &nbsp; Frontend: &nbsp;
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
 ![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
 ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
