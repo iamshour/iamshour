@@ -6,7 +6,6 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <br />
 
 <!--
-**iamshour/iamshour** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -18,17 +17,9 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
-## Technologies & Tools 🔧
 
-<img src="https://media3.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.webp" alt="node.js" width="50">
 <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="Javascript" width="40">
-<img src="https://media.giphy.com/media/YshYTgWWi7NZgCOPGa/giphy.gif" alt="html" width="40">
-<img src="https://media.giphy.com/media/BY7rFObREdDeMgfraM/giphy.gif" alt="css" width="40">
-<img src="https://media.giphy.com/media/KzJkzjggfGN5Py6nkT/giphy.gif" alt="github" width="40">
 <img src="https://i.giphy.com/media/eNAsjO55tPbgaor7ma/200w.webp" alt="React" width="50">
-<img src="https://i.giphy.com/media/IdyAQJVN2kVPNUrojM/200.webp" alt="VS code" width="50">
-<img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="git" width="100">
 -->
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
