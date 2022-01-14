@@ -70,9 +70,6 @@ Here are some ideas to get you started:
   </p>
 </p>
 
-<br />
-<br />
-
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 
 <br />
