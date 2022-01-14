@@ -60,11 +60,9 @@ Here are some ideas to get you started:
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
 <br />
-<p align="right">
-<img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" />
-<img  float="right" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" />
 
-</p>
+[![iamshour's GitHub stats](https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
+[![Top Langs](https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
