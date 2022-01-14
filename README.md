@@ -79,12 +79,14 @@ Here are some ideas to get you started:
 <p align="center">
 <img width='49%' align="center src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" height="210" />
 <span>&nbsp;</span>
-<img  width='49%' align="center src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
+<img width='49%' align="center src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
 </p>
+
+<br />
+<br />
 
 <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's github streak" width="400" height="210" />
 
-<br />
 <br />
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
