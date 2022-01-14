@@ -23,42 +23,30 @@ Here are some ideas to get you started:
 -->
 
 
-<h3> 🔧 &nbsp;Tech Stack</h3>
+<h3> 🛠 &nbsp;Tech Stack</h3>
 
-- 💻 &nbsp; Frontend: &nbsp;
+- 🌐 &nbsp; Front-end: &nbsp;
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
 ![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
-![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![React](https://img.shields.io/badge/-React-black?style=flat&logo=react)
 
-:sparkles:
+- 🛢 &nbsp; Back-end: &nbsp;
+![Nodejs](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 - 🖌 &nbsp; UI Frameworks: &nbsp;
 ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat&logo=bootstrap)
 
-
-
-### Back-end
-<br />
-
-![Nodejs](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-### Deploys
-<br />
-
+- 💻 &nbsp; Deployment: &nbsp;
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![Netlify](https://img.shields.io/badge/-Netlify-000000?style=flat-square&logo=netlify)
 
-### Editors
-<br />
-
+- 🔧 &nbsp; Editors: &nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 ![Sublime Text](https://img.shields.io/badge/-Sublime-4B4B4B?style=flat-square&logo=sublime-text&logoColor=FF9800)
-
 
 <br />
 
@@ -72,6 +60,7 @@ Here are some ideas to get you started:
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
 
+[![Website](https://img.shields.io/badge/Website-www.iamshour.com-blue?style=flat-square&logo=google-chrome)](https://www.iamshour.com/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:aliahmadshour@gmail.com)](mailto:aliahmadshour@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/alishour/)](https://www.linkedin.com/in/alishour/)
 [![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=flat-square&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=96171230387&text=Hi!)](https://api.whatsapp.com/send?phone=96171230387&text=Hi!)
