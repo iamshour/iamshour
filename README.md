@@ -32,7 +32,7 @@ Here are some ideas to get you started:
 ![React](https://img.shields.io/badge/-React-black?style=flat&logo=react)
 
 - 🛢 &nbsp; Back-end: &nbsp;
-![Nodejs](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 - 🖌 &nbsp; UI Frameworks: &nbsp;
