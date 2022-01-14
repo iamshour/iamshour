@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 ## Technologies & Tools 🔧
 -->
 
-<iframe src="https://giphy.com/embed/ln7z2eWriiQAllfVcn" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/devrock-javascript-edr-escueladevrock-ln7z2eWriiQAllfVcn">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" width="50">
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
