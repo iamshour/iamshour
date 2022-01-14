@@ -99,8 +99,8 @@ Here are some ideas to get you started:
   
 <a  href="https://github.com/iamshour">
   
-<img width="50%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="" href="iamshour's github streak" />
-<img width="42%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true&layout=compact&count_private=true&hide_border=true&icon_color=f2f2f2&langs_count=5" alt="iamshour's top langs" href="https://github.com/iamshour" />
+<img width="45%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="" href="iamshour's github streak" />
+<img width="38%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true&layout=compact&count_private=true&hide_border=true&icon_color=f2f2f2&langs_count=5" alt="iamshour's top langs" href="https://github.com/iamshour" />
  
 </a>
 
