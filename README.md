@@ -61,13 +61,19 @@ Here are some ideas to get you started:
 
 <br />
 
-<div display="flex" justify-content="space-between">
+<p align="right">
+  <p align="left">
+    
+    [![iamshour's GitHub stats](https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
   
-  [![iamshour's GitHub stats](https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
+  </p>
+  <p align="left">
+    
+    [![Top Langs](https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
   
-  [![Top Langs](https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true)](https://github.com/iamshour)
+  </p>
   
-</div>
+</p>
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
