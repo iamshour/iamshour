@@ -76,9 +76,13 @@ Here are some ideas to get you started:
 
 <br />
 
-<img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" width="400" height="210" />
-<img align = "right" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
-<img align="left" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's github streak" width="400" height="210" />
+<p align="center">
+<img align="center" width='60%' src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" height="210" />
+<span>&nbsp;</span>
+<img  align="center" width='40%' src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" height="210" />
+</p>
+
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's github streak" width="400" height="210" />
 
 <br />
 <br />
