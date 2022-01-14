@@ -54,7 +54,6 @@ Here are some ideas to get you started:
 
 
 <br />
-<br />
 
 ## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
 <br />
