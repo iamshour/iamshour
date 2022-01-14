@@ -95,6 +95,8 @@ Here are some ideas to get you started:
 
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
+<br>
+
 <div align="center" >
   
 <a  href="https://github.com/iamshour">
@@ -106,6 +108,7 @@ Here are some ideas to get you started:
 
 </div>
 
+<br>
 <br>
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
