@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 ## Technologies & Tools 🔧
 -->
 
-<img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" width="50">
+<img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" width="40">
 
 <h3> 🛠 &nbsp;Tech Stack</h3>
 
