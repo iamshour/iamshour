@@ -21,6 +21,25 @@ Here are some ideas to get you started:
 ![iamshour's github stats](https://github-readme-stats.vercel.app/api?username=iamshour&show_icons=true&hide_border=true)
 -->
 
+## Technologies & Tools 🔧
+
+<p align="right">
+  <p align="left" border="1px solid #ffffff" border-radius="16px" padding="10px">
+    ### Front-end
+    ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+    ![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+    ![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
+    ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+    ![React](https://img.shields.io/badge/-React-%23282C34?style=flat-square&logo=react)
+  </p>
+  <p float="right" border="1px solid #ffffff" border-radius="16px" padding="10px">
+    ### Back-end
+    ![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+    ![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+  </p>
+</p>
+
+
 ## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
 <br />
 <p align="right">
