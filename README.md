@@ -24,13 +24,13 @@ Here are some ideas to get you started:
 ## My stats &nbsp;<img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px">
 <br />
 <p align="right">
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=alexnaiman&theme=tokyonight&show_icons=true" />
-<img  float="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexnaiman&theme=tokyonight&show_icons=true" />
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=iashour=tokyonight&show_icons=true" />
+<img  float="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" />
 </p>
 <br />
 <br />
 
-## Connect with me &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
+## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
 <br />
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alishour/"  >
     <img align="left" alt="Ali Shour | Linkedin" width="24px" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1642116463~hmac=843046dacef63a6ebe6c9b76ef003e81" />
