@@ -61,17 +61,20 @@ Here are some ideas to get you started:
 
 <br />
 
-<p align="center" >
-  
-  <img align="left" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" />
-  
-  <img align="right" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" />
-  
+<p align="right" >
+  <p align="left" >
+    <img src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" />
+  </p>
+  <p align="right" >
+    <img src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's top langs" />
+  </p>
 </p>
 
 <br />
+<br />
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
+
 <br />
 
 [![Website](https://img.shields.io/badge/Website-www.iamshour.com-blue?style=flat-square&logo=google-chrome)](https://www.iamshour.com/)
