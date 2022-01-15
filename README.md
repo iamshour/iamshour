@@ -4,7 +4,7 @@
 
 <br>
 
-<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 />! &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
+<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
 
 <br />
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
@@ -103,7 +103,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h3> 📜 &nbsp;Latest projects:</h3>
+<h3> 💼 &nbsp;Latest projects:</h3>
 
 | 💻 **Main Stack** | 🚀 **Projects** | 📕 **Repo** | 🌐 **URL** |
 |-|-|-|-|
@@ -116,6 +116,9 @@ Here are some ideas to get you started:
 | <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="firebase" height="35"/></div> | Snapbook: A photo gallery app built with react, sass, and firebase (storage, firestore database, hosting) | [![Snapbook-app](https://img.shields.io/static/v1?label=Snapbook&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/snapbook.git) | <a  href="https://snapbook-a8a05.web.app/">Live site</a> |
 | <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div> | Personal Portfolio website: old school, but new one in the works 😁 | [![portfolio](https://img.shields.io/static/v1?label=Portfolio&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/portfolio.git) | <a  href="https://www.iamshour.com/">Live site</a> |
 
+<br />
+<br />
+
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
 <br>
@@ -124,14 +127,13 @@ Here are some ideas to get you started:
   
 <a  href="https://github.com/iamshour">
   
-<img width="45%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="" href="iamshour's github streak" />
-<img width="38%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true&layout=compact&count_private=true&hide_border=true&icon_color=f2f2f2&langs_count=5" alt="iamshour's top langs" href="https://github.com/iamshour" />
+<img width="50%" height="110" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="" href="iamshour's github streak" />
+<img width="42%" height="110" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true&layout=compact&count_private=true&hide_border=true&icon_color=f2f2f2&langs_count=5" alt="iamshour's top langs" href="https://github.com/iamshour" />
  
 </a>
 
 </div>
 
-<br>
 <br>
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
