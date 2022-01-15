@@ -1,4 +1,6 @@
-<img align="center" width="80%" height="120" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
+<div align="center">
+  <img align="center" width="80%" height="120" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
+</div>
 
 <br>
 
