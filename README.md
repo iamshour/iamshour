@@ -121,7 +121,7 @@ Here are some ideas to get you started:
 <br />
 <br />
 
-<h2 align="center"><img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px">&nbsp;𝕄𝕪 𝕊𝕥𝕒𝕥𝕤&nbsp;<img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px"> </h2>
+<div align="center"><h2><img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px">&nbsp;𝕄𝕪 𝕊𝕥𝕒𝕥𝕤&nbsp;<img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px"></h2></div>
 
 <br />
 
