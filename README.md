@@ -4,7 +4,7 @@
 
 <br>
 
-<h2 align="center">𝕘𝕣𝕖𝕖𝕥𝕚𝕟𝕘𝕤 𝕗𝕖𝕝𝕝𝕠𝕨 <𝔻𝔼𝕍𝕤 />! &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="24px"> </h2>
+<h2 align="center">𝔾𝕣𝕖𝕖𝕥𝕚𝕟𝕘𝕤, 𝕗𝕖𝕝𝕝𝕠𝕨 <𝔻𝔼𝕍𝕤 />! &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="24px"> </h2>
 
 <br />
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
