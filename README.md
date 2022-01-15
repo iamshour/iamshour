@@ -103,7 +103,9 @@ Here are some ideas to get you started:
 
 <br />
 
-## <img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="27px"> &nbsp;&nbsp;Latest projects:
+<h2 align="center"><img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="28px">&nbsp;𝐿𝒶𝓉𝑒𝓈𝓉 𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="28px"> </h2>
+
+<br />
 
 | 💻 **Main Stack** | 🚀 **Projects** | 📕 **Repo** | 🌐 **URL** |
 |-|-|-|-|
