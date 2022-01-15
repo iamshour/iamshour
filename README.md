@@ -121,9 +121,9 @@ Here are some ideas to get you started:
 <br />
 <br />
 
-## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="27px"> &nbsp;&nbsp;My Stats
+<h2 align="center"><img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px">&nbsp;𝕄𝕪 𝕊𝕥𝕒𝕥𝕤&nbsp;<img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ryk/giphy.gif" width="40px"> </h2>
 
-<br>
+<br />
 
 <div align="center" height="110">
   
