@@ -103,7 +103,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h3> 💼 &nbsp;Latest projects:</h3>
+## <img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="27px"> &nbsp;&nbsp;Latest projects:
 
 | 💻 **Main Stack** | 🚀 **Projects** | 📕 **Repo** | 🌐 **URL** |
 |-|-|-|-|
@@ -119,7 +119,7 @@ Here are some ideas to get you started:
 <br />
 <br />
 
-## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
+## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="27px"> &nbsp;&nbsp;My Stats
 
 <br>
 
