@@ -105,10 +105,10 @@ Here are some ideas to get you started:
 
 <h3> 📜 &nbsp;Latest projects:</h3>
 
-| 💻 **Main Technology** | 🚀 **Projects** | 📕 **Repo** | 🌐 ** Live URL** |
+| 💻 **Main Stack** | 🚀 **Projects** | 📕 **Repo** | 🌐 **URL** |
 |-|-|-|-|
-| <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="60"/> | <p>imomnets app: A full-stack social media application</p> | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git) | <a  href="https://imoments.netlify.app/#/">Live link</a> |
-| <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="60"/> | <p>imomnets app: A full-stack social media application</p> | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git) | <a  href="https://imoments.netlify.app/#/">Live link</a> |
+| <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="40"/> | <p>imomnets app: A full-stack social media application</p> | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git) | <a  href="https://imoments.netlify.app/#/">Live link</a> |
+| <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="40"/> | <p>imomnets app: A full-stack social media application</p> | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git) | <a  href="https://imoments.netlify.app/#/">Live link</a> |
 
 ## <img src="https://iamshour.github.io/hosted-assets/Earth.gif" width="24px"> &nbsp;My Stats
 
