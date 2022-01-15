@@ -51,7 +51,9 @@ Here are some ideas to get you started:
 
 -->
 
-<h3> 🛠 &nbsp;Tech Stack</h3>
+<h2 align="center"><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕋𝕖𝕔𝕙 𝕊𝕥𝕒𝕔𝕜&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"> </h2>
+
+<br />
 
 - 🌐 &nbsp; Front-end: &nbsp;
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -103,7 +105,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h2 align="center"><img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px">&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px"> </h2>
+<h2 align="center"><img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px"> </h2>
 
 <br />
 
@@ -121,7 +123,7 @@ Here are some ideas to get you started:
 <br />
 <br />
 
-<h2 align="center"><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">&nbsp;&nbsp;𝕄𝕪 𝕊𝕥𝕒𝕥𝕤&nbsp;&nbsp;<img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"> </h2>
+<h2 align="center"><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕄𝕪 𝕊𝕥𝕒𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"> </h2>
 
 <br />
 
@@ -138,7 +140,7 @@ Here are some ideas to get you started:
 
 <br>
 
-## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
+<h2 align="center"><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕖𝕥𝕤 𝔾𝕖𝕥 𝕀𝕟 𝕋𝕠𝕦𝕔𝕙!&nbsp;&nbsp;&nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="40px"> </h2>
 
 <br />
 
@@ -159,5 +161,5 @@ Here are some ideas to get you started:
 <br />
 
 <p align="center">
-  <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="20%">
+  <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="40%">
 </p>
