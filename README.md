@@ -52,7 +52,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 -->
 
 <div align="center">
-  <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&center=true&vCenter=true&width=300&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" width="40px">
+  <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&center=true&vCenter=true&width=300&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
 </div>
 <!--
 <h2 align="center"><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕋𝕖𝕔𝕙 𝕊𝕥𝕒𝕔𝕜&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"> </h2>
