@@ -9,7 +9,6 @@
 <br />
 <br />
 <!-- 
-
 https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif
 -->
 <p>
