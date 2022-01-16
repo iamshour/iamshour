@@ -131,7 +131,6 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 
 ---
 <br />
-<br />
 
 <div align="center" height="110">
   
@@ -144,6 +143,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 
 </div>
 
+<br>
 <br>
 <br>
 
