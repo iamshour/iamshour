@@ -10,7 +10,6 @@
 <br />
 <!-- 
 https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif snicers
-
 https://media.giphy.com/media/fkZukR450RQ1qnGaq9/giphy.gif
 https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif
 https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gif BLUE
