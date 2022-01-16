@@ -9,11 +9,12 @@
 <br />
 <br />
 
-<p>
-  <a href="https://www.iamshour.com/"><img width="250" align='left' src="https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif"></a>
-</p>
-
-Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
+<div width="100%">
+  <p>
+    <a href="https://www.iamshour.com/"><img width="250" align='left' src="https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif"></a>
+  </p>
+  Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
+</div>
  
 <br>
 <br>
