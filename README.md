@@ -5,12 +5,16 @@
 <br />
 
 <div align="center">
+  <img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9F%85%B6%F0%9F%86%81%F0%9F%85%B4%F0%9F%85%B4%F0%9F%86%83%F0%9F%85%B8%F0%9F%85%BD%F0%9F%85%B6%F0%9F%86%82+%F0%9F%85%B5%F0%9F%85%B4%F0%9F%85%BB%F0%9F%85%BB%F0%9F%85%BE%F0%9F%86%86+%3C%F0%9F%85%B3%F0%9F%85%B4%F0%9F%86%85%F0%9F%86%82%2F%3E%F0%9F%91%8B+" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px">
+</div>
+
+<br />
+
+<div align="center">
   <img align="center" width="80%" height="120" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
 </div>
 
 <br>
-
-<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
 
 <br />
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
@@ -21,7 +25,8 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <br />
 
 <!--
-🅶🆁🅴🅴🆃🅸🅽🅶🆂 🅵🅴🅻🅻🅾🆆 🅳🅴🆅🆂
+
+<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
 𝔾𝕣𝕖𝕖𝕥𝕚𝕟𝕘𝕤, 𝕗𝕖𝕝𝕝𝕠𝕨
 Here are some ideas to get you started:
 
