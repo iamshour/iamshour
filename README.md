@@ -3,7 +3,7 @@
 </div>
 
 <div width="100%" align="center">
-  <hr width="450" style="height: 0.1em; margin: 0;" />
+  <hr width="450" style="height: 0.1em" />
 </div>
 
 <br />
