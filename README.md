@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="40px" height="40px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=35&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="40px" height="40px">
+  <img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=35&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">
 </div>
 
 <div width="100%" align="center">
@@ -9,13 +9,12 @@
 <br />
 <br />
 <!-- 
-https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif code
 https://media.giphy.com/media/fkZukR450RQ1qnGaq9/giphy.gif
 https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif
 https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gif BLUE
 -->
 <p>
-  <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jdPMeyv9rn0hZHh8n9/giphy.gif"></a>
+  <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif"></a>
 </p>
 
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
