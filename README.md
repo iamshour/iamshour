@@ -35,7 +35,6 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <span width="100%">&nbsp;</span>
  
 <br>
-<br>
 
 <div align="center">
   <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
