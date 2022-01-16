@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/89jRrowcuHEG0OFavV/giphy.gif" width="35px"><img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" /><img src="https://media.giphy.com/media/89jRrowcuHEG0OFavV/giphy.gif" width="35px">
+  <img src="https://media.giphy.com/media/89jRrowcuHEG0OFavV/giphy.gif" width="35px"><img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=70&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" /><img src="https://media.giphy.com/media/89jRrowcuHEG0OFavV/giphy.gif" width="35px">
 </div>
 
 ---
