@@ -15,39 +15,13 @@
 
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
  
-<br />
-<br />
-<br />
-<br />
-<br />
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<!--
-<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<div align="center" >
-  
-<a  href="https://github.com/iamshour">
-  
-<img width="40%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
-<img width="40%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
-
-</a>
-
-<img align="center" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github streak" width="400" height="210" />
-
-</div>
--->
-
-<div align="center" width="100%">
+<div align="center">
   <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
 </div>
 
@@ -175,3 +149,29 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <p align="center">
   <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="300">
 </p>
+
+<!--
+<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<div align="center" >
+  
+<a  href="https://github.com/iamshour">
+  
+<img width="40%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
+<img width="40%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
+
+</a>
+
+<img align="center" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github streak" width="400" height="210" />
+
+</div>
+-->
