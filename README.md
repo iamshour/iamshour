@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" height="46px">
   <img src="https://media.giphy.com/media/NcX5bAU7qyPPCJfruF/giphy.gif" width="46px" height="46px">&nbsp;<img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=46&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/NcX5bAU7qyPPCJfruF/giphy.gif" width="46px" height="46px">
 </div>
 
