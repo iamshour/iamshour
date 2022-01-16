@@ -2,20 +2,16 @@
   <img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=35&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">
 </div>
 
-<div width="100%" align="center" height="1px" overflow="hidden">
+<div width="100%" align="center">
   <hr width="450" />
 </div>
 
 <br />
 
-<div align="center">
-  <img align="center" width="80%" height="120" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
+<div width="100%" >
+  Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
+  <img align="right" width="200px" height="200px" src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="iamshour's github" href="https://github.com/iamshour" />
 </div>
-
-<br>
-
-<br />
-Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
 
 <br />
 <br />
