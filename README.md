@@ -9,7 +9,7 @@
 <br />
 <br />
 
-<div width="100%">
+<div width="100%" align="center">
   <p>
     <a href="https://www.iamshour.com/"><img width="250" align='left' src="https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif"></a>
   </p>
