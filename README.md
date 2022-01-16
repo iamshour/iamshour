@@ -9,7 +9,7 @@
 <br />
 
 <p>
-  <a href="https://www.iamshour.com/"><img width="300" align='right' src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"></a>
+  <a href="https://www.iamshour.com/"><img width="300" align='right' src="https://i.giphy.com/media/cUAGuLiEcTBwRfkAQq/giphy.webp"></a>
 </p>
  
 Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
