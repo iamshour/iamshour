@@ -17,7 +17,7 @@ I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br>
 Focuses on small business & startups to stand out with a solid online presence 🙌🏼 <br> 
 I'm a creative problem solving enthusiast, with a constantly growing love for learning & exploring new languages, frameworks, and new cool stuff! <br> 
 
-<h4> 💥 &nbsp;My end-products are:</h4>
+<h4>My crafted web experiences are:</h4>
 
 - **Intuitive 🤩**
 - **Responsive & Dynamic ✅**
