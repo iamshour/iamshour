@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="26px">&nbsp;&nbsp;<img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="26px">
+  <img src="https://media.giphy.com/media/4Dvs5Bj0iGc7vJXbTX/giphy.gif" width="28px">&nbsp;&nbsp;<img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://media.giphy.com/media/4Dvs5Bj0iGc7vJXbTX/giphy.gif" width="28px">
 </div>
 
 <br />
@@ -21,8 +21,6 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <!--
 
 <h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
-𝔾𝕣𝕖𝕖𝕥𝕚𝕟𝕘𝕤, 𝕗𝕖𝕝𝕝𝕠𝕨
-Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
@@ -32,9 +30,6 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-
-<img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="Javascript" width="40">
-<img src="https://i.giphy.com/media/eNAsjO55tPbgaor7ma/200w.webp" alt="React" width="50">
 
 <div align="center" >
   
@@ -53,8 +48,6 @@ Here are some ideas to get you started:
 </div>
 
 ## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
-
-<br />
 
 -->
 
@@ -112,7 +105,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h2 align="center"><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px"> </h2>
+<h2 align="center"><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px">&nbsp;&nbsp;&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px"> </h2>
 
 <br />
 
