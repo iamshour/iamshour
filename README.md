@@ -1,11 +1,5 @@
 <div align="center">
-  <img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px">
-</div>
-
-<br />
-
-<div align="center">
-  <img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9F%85%B6%F0%9F%86%81%F0%9F%85%B4%F0%9F%85%B4%F0%9F%86%83%F0%9F%85%B8%F0%9F%85%BD%F0%9F%85%B6%F0%9F%86%82+%F0%9F%85%B5%F0%9F%85%B4%F0%9F%85%BB%F0%9F%85%BB%F0%9F%85%BE%F0%9F%86%86+%3C%F0%9F%85%B3%F0%9F%85%B4%F0%9F%86%85%F0%9F%86%82%2F%3E%F0%9F%91%8B+" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px">
+  <img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="26px">&nbsp;&nbsp;<img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=500&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E" alt="Greetings, fellow devs!" />&nbsp;&nbsp;<img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="26px">
 </div>
 
 <br />
