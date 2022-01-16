@@ -49,6 +49,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
   <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=250&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
 </div>
 
+---
 <br />
 
 - 🌐 &nbsp; Front-end: &nbsp;
@@ -105,6 +106,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <div align="center">
   <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=250&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest Projects" /><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px">
 </div>
+
 ---
 <br />
 
@@ -121,13 +123,14 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 
 <br />
 <br />
+<br />
 
 <div align="center">
   <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" /><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">
 </div>
 
+---
 <br />
-
 <br />
 
 <div align="center" height="110">
@@ -142,9 +145,13 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 </div>
 
 <br>
+<br>
 
-<h2 align="center"><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕖𝕥𝕤 𝔾𝕖𝕥 𝕀𝕟 𝕋𝕠𝕦𝕔𝕙!&nbsp;&nbsp;&nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="40px"> </h2>
+<div align="center">
+  <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" /><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px">
+</div>
 
+---
 <br />
 
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.iamshour.com/)
