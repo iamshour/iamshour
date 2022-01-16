@@ -148,7 +148,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <br>
 
 <div align="center">
-  <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&height=25&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" /><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px">
+  <img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&height=20&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" /><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px">
 </div>
 
 ---
