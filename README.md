@@ -13,7 +13,19 @@
   <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif"></a>
 </p>
 
-Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently taking freelance opportunities by helping out small businesses stand out :raised_hands: I'm a creative problem solving enthusiast, with a constantly growing love for learning & discovering new languages, frameworks, and everything new about the web! Beside's coding, I enjoy watching and playing soccer :soccer: with my mates!
+
+<h4> 👨🏻‍💻 &nbsp;About me:</h4>
+
+I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 
+Focuses on small business & startups to stand out with a solid online presence 🙌🏼
+I'm a creative problem solving enthusiast, with a constantly growing love for learning & exploring new languages, frameworks, and new cool stuff!
+
+<h4> 📜 &nbsp;Certified by:</h4>
+
+![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
+![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
+
+<br />
  
 <span width="100%">&nbsp;</span>
  
@@ -69,15 +81,6 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 ![codesandbox](https://img.shields.io/badge/Codesandbox-000000?style=for-the-badge&logo=CodeSandbox&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-<br />
-
-<h3> 📜 &nbsp;Certified by:</h3>
-
-<br>
-
-![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
-![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
 
 <br />
 <br />
