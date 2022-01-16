@@ -112,7 +112,7 @@ Here are some ideas to get you started:
 
 <br />
 
-<h2 align="center"><img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px"> </h2>
+<h2 align="center"><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="40px">&nbsp;&nbsp;&nbsp;𝕃𝕒𝕥𝕖𝕤𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤&nbsp;&nbsp;&nbsp;<img src="https://media.giphy.com/media/w6q8QrjYAACIPLdYU6/giphy.gif" width="40px"> </h2>
 
 <br />
 
