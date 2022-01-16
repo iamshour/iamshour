@@ -126,7 +126,7 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <br />
 
 <div align="center">
-  <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" /><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">
+  <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" /><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">
 </div>
 
 ---
