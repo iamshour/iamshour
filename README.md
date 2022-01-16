@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center" width="80%" height="120" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&lines=%F0%9D%90%86%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9E%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%AC%2C+%F0%9D%90%9F%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A5%F0%9D%90%A8%F0%9D%90%B0+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E%F0%9F%91%8B" alt="Greetings, fellow devs!" />
+  <img align="center" width="80%" height="120" src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&center=true&vCenter=true&lines=%F0%9D%90%86%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9E%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%AC%2C+%F0%9D%90%9F%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A5%F0%9D%90%A8%F0%9D%90%B0+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E%F0%9F%91%8B" alt="Greetings, fellow devs!" />
 </div>
 
 <br />
