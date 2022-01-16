@@ -14,8 +14,8 @@
 </p>
 
 I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br> 
-Focuses on small business & startups to stand out with a solid online presence 🙌🏼 <br> 
-I'm a creative problem solving enthusiast, with a constantly growing love for learning & exploring new languages, frameworks, and new cool stuff! <br> 
+I tend to Focus on small business & startups to stand out with a solid online presence 🙌🏼 <br> 
+I'm a problem solving enthusiast, passionate for learning & exploring new languages, frameworks, and cool stuff! <br> 
 
 <h4>My crafted web experiences are:</h4>
 
@@ -34,8 +34,6 @@ I'm a creative problem solving enthusiast, with a constantly growing love for le
 
 <span width="100%">&nbsp;</span>
  
-<br>
-<br>
 <br>
 <br>
 
