@@ -17,9 +17,9 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 <br />
 <br />
 <br />
+<br />
 
 <!--
-
 <h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
 
 - 🔭 I’m currently working on ...
@@ -40,15 +40,9 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 
 </a>
 
-<br>
-<br>
-
 <img align="center" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github streak" width="400" height="210" />
 
 </div>
-
-## Contact me! &nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" height="32px">
-
 -->
 
 <div align="center">
@@ -106,11 +100,12 @@ Hi, I'm Ali Shour :v: a Full Stack Web Developer & UI designer 🚀 currently ta
 ![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
 
 <br />
+<br />
 
 <div align="center">
   <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=250&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest Projects" /><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px">
 </div>
-
+---
 <br />
 
 | 💻 **Main Stack** | 🚀 **Projects** | 📕 **Repo** | 🌐 **URL** |
