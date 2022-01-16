@@ -13,23 +13,26 @@
   <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif"></a>
 </p>
 
-
-<h4> 👨🏻‍💻 &nbsp;About me:</h4>
-
 I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br> 
 Focuses on small business & startups to stand out with a solid online presence 🙌🏼 <br> 
 I'm a creative problem solving enthusiast, with a constantly growing love for learning & exploring new languages, frameworks, and new cool stuff! <br> 
+
+<h4> 💥 &nbsp;My end-products are:</h4>
+- **Intuitive 🤩**
+- **Responsive & Dynamic ✅**
+- **Reusable ♻️**
+- **Secure 🛡️**
+- **Blazing fast response ⚡️**
+- **SEO friendly 🔍**
+- **Pixel-perfect code ✨**
 
 <h4> 📜 &nbsp;Certified by:</h4>
 
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
 ![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
 
-<br />
- 
 <span width="100%">&nbsp;</span>
  
-<br>
 <br>
 <br>
 <br>
