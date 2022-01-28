@@ -150,7 +150,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white&link=https://dribbble.com/iamshour)](https://dribbble.com/iamshour)
 [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?&style=for-the-badge&logo=Pinterest&logoColor=white&link=https://www.pinterest.com/iamshour/)](https://www.pinterest.com/iamshour/)
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=iamshour)
+[![visitors](https://visitor-badge.laobi.icu/badge?page_id=iamshour&link=https://github.com/iamshour)](https://github.com/iamshour)
 
 <br />
 <br />
