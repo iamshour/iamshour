@@ -29,8 +29,8 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 
 <h4> 📜 &nbsp;Certified by:</h4>
 
-![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
-![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white)
+[![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white&link=https://www.coursera.org/)](https://www.coursera.org/)
+[![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white&link=https://www.freecodecamp.org/)](https://www.freecodecamp.org/)
 
 <span width="100%">&nbsp;</span>
  
@@ -69,7 +69,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 [![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white&link=https://www.styled-components.com/)](https://www.styled-components.com/)
 
 - 💻 &nbsp; Deployment: &nbsp;
-[![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&link=https://www.styled-components.com/)](https://www.styled-components.com/)
+[![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&link=https://git-scm.com/)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/)](https://github.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white&link=https://www.netlify.com/)](https://www.netlify.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white&link=https://vercel.com/)](https://vercel.com/)
