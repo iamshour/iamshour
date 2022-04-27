@@ -110,7 +110,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 
 <div align="center">
-  <img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&height=20&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" /><img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="50px">
+  <img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&height=20&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" /><img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="40px">
 </div>
 
 <!-- BLOG-POST-LIST:START --><!-- BLOG-POST-LIST:END -->
