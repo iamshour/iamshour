@@ -16,3 +16,4 @@ jobs:
         with:
           feed_list: "https://blog.iamshour.com/rss.xml"
           template: "<tr><td><a href={$url}>$title</a></td><td>$description</td><td>$categories</td></tr>"
+          disable_html_encoding: "true"
