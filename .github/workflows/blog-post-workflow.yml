@@ -15,5 +15,5 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "https://@iamshour.hashnode.dev/rss.xml"
-          template: <tr><td><a href="$url">$title</a></td><td>$categories</td></tr>
+          template: <tr><td><a href="$url">$title</a></td><td>$date</td></tr>
           disable_html_encoding: "true"
