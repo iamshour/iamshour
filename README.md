@@ -114,7 +114,7 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 
 <table>
   <tr><th>Title</th><th>Categories</th></tr>
-  <!-- BLOG-POST-LIST:START --><tr><td>[https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3](Creating a RESTful API easily using node.js | Part 3)</td><td></td></tr><tr><td>[https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2](Creating a RESTful API easily using node.js | Part 2)</td><td></td></tr><tr><td>[https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1](Creating a RESTful API easily using node.js | Part 1)</td><td></td></tr><tr><td>[https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily](Send emails from your website to any user super easily!)</td><td></td></tr><!-- BLOG-POST-LIST:END -->
+  <!-- BLOG-POST-LIST:START --><tr><td>[Creating a RESTful API easily using node.js | Part 3](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3)</td><td></td></tr><tr><td>[Creating a RESTful API easily using node.js | Part 2](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2)</td><td></td></tr><tr><td>[Creating a RESTful API easily using node.js | Part 1](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1)</td><td></td></tr><tr><td>[Send emails from your website to any user super easily!](https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily)</td><td></td></tr><!-- BLOG-POST-LIST:END -->
 </table>
 
 <br />
