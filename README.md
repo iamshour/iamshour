@@ -1,9 +1,7 @@
-<div align="center">
-  <img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=30&center=true&vCenter=true&width=480&height=35&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="40px" height="40px">
-</div>
-
-<div width="100%" align="center">
-  <hr width="450" />
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 540px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="35px" height="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=26&center=true&vCenter=true&width=440&height=35&lines=%F0%9D%94%BE%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98%F0%9D%95%A4%2C+%F0%9D%95%97%F0%9D%95%96%F0%9D%95%9D%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%A8+%3C%F0%9D%94%BB%F0%9D%94%BC%F0%9D%95%8D%F0%9D%95%A4+%2F%3E!" alt="Greetings, fellow devs!" />&nbsp;<img src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" width="35px" height="35px">
+  </h2>
 </div>
 
 <br />
@@ -13,9 +11,8 @@
   <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif"></a>
 </p>
 
-I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br>
-I tend to Focus on small business & startups to stand out with a solid online presence 🙌🏼 <br>
-I'm a problem solving enthusiast, passionate for learning new languages, frameworks, and🆕🆒stuff!<br>
+I'm Ali Shour, a software developer with expertise using the MERN & JAM stacks to produce modern Full-stack web solutions, while writing performant & efficient code 🚀 <br>
+I'm a problem solving enthusiast, passionate for learning new languages & frameworks, whilst keeping up-to-date with the industry. <br>
 
 <h4>My crafted web experiences are:</h4>
 
@@ -26,7 +23,6 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 - **Blazing fast response ⚡️**
 - **SEO friendly 🔍**
 - **Pixel-perfect code ✨**
-- **Test Update ✨**
 
 <h4> 📜 &nbsp;Certified by:</h4>
 
@@ -37,9 +33,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 
 <br>
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
-</h2>
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 240px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="35px" />&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=160&height=35&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Tech stack" />&nbsp;<img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="35px" />
+  </h2>
+</div>
 
 <br/>
 
@@ -86,9 +84,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 <br />
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=250&height=40&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest Projects" /><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px">
-</h2>
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 240px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=180&height=35&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest projects" />&nbsp;<img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="35px">
+  </h2>
+</div>
 
 <br/>
 
@@ -108,9 +108,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 <br />
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=280&height=40&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" /><img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="40px">
-</h2>
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 320px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=240&height=35&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" />&nbsp;<img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="35px">
+  </h2>
+</div>
 
 <br/>
 
@@ -125,9 +127,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 <br />
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" /><img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="40px">
-</h2>
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 240px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=160&height=35&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" />&nbsp;<img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="35px">
+  </h2>
+</div>
 
 <br/>
 
@@ -137,7 +141,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
   
 <img width="50%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="" href="iamshour's github streak" />
 <img width="42%" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true&layout=compact&count_private=true&hide_border=true&icon_color=f2f2f2&langs_count=5" alt="iamshour's top langs" href="https://github.com/iamshour" />
- 
+
 </a>
 
 </div>
@@ -146,7 +150,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br>
 <br>
 
-<h2 align="center"> 🏆 GitHub Achievements:</h2>
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 400px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://media.giphy.com/media/fw3XuXcz1p1AZdZOH8/giphy.gif" width="35px" />&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=26&center=true&vCenter=true&width=330&height=35&lines=%F0%9D%94%BE%F0%9D%95%9A%F0%9D%95%A5%E2%84%8D%F0%9D%95%A6%F0%9D%95%93+%F0%9D%94%B8%F0%9D%95%94%F0%9D%95%99%F0%9D%95%9A%F0%9D%95%96%F0%9D%95%A7%F0%9D%95%96%F0%9D%95%9E%F0%9D%95%96%F0%9D%95%9F%F0%9D%95%A5%F0%9D%95%A4" alt="Github achievements" />&nbsp;<img src="https://media.giphy.com/media/fw3XuXcz1p1AZdZOH8/giphy.gif" width="35px" />
+  </h2>
+</div>
 
 <br/>
 
@@ -156,13 +164,12 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 
 <br>
 <br>
-<br>
 
-<div align="center">
-  <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=350&height=20&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" /><img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif" width="50px">
+<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
+  <h2 align="center" style='display: flex; height: 100%; max-width: 440px; padding-bottom: 12px; justify-content: center; align-items: center' >
+    <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif?raw=true" width="60px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=26&center=true&vCenter=true&width=320&height=35&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" />&nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif?raw=true" width="60px">
+  </h2>
 </div>
-
----
 
 <br />
 
@@ -189,23 +196,9 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 </p>
 
 <!--
-<h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
-
 istyle-fashion-store-link
 <a  href="https://istyle-fashion.vercel.app/">Live site</a>
 
 <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif"></a>
 
-<div align="center" >
-
-<a  href="https://github.com/iamshour">
-
-<img width="40%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
-<img width="40%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
-
-</a>
-
-<img align="center" src="https://github-readme-stats-iamshour.vercel.app/api/top-langs/?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github streak" width="400" height="210" />
-
-</div>
 -->
