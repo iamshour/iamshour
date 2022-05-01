@@ -114,7 +114,7 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 
 <table>
   <tr><th>Title</th><th>Link</th><th>Description</th><th>Categories</th></tr>
-  <!-- BLOG-POST-LIST:START --><tr><td>[Creating a RESTful API easily using node.js | Part 3](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3)</td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
+  <!-- BLOG-POST-LIST:START --><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3}>Creating a RESTful API easily using node.js | Part 3</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Throughout the two previous parts, we&#39;ve learned how to setup a very basic RESTful API from scratch, and tested this API locally in a very simple example. In this post, we&#39;re going to integrate this API with MongoDB Atlas, and use mongoose to manipulate our database collection by fetching, editing, and deleting some data. Fist step is to open your project with your favorite code editor &lpar;VS code in my case&rpar;. You can download the source code from the previous part by cloning/downloading this &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing.git&quot;&gt;repo&lt;/a&gt;. Or Download Full project by cloning/downloading this &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;heading-adding-new-packages&quot;&gt;Adding new packages&lt;/h2&gt;
 &lt;p&gt;First of all, let&#39;s add some new packages we&#39;re going to use in our project. Open up the terminal, and make sure you&#39;re in the root directory of your project, then run the following script:&lt;/p&gt;
@@ -353,7 +353,7 @@ export &lt;span class=&quot;hljs-keyword&quot;&gt;default&lt;/span&gt; router
 &lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
 &lt;br /&gt;
 Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td>[Creating a RESTful API easily using node.js | Part 2](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2)</td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2}>Creating a RESTful API easily using node.js | Part 2</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Throughout the &lt;a target=&quot;_blank&quot; href=&quot;https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1&quot;&gt;first part&lt;/a&gt;, we&#39;ve learned how to create a very basic RESTful API, which could be used to communicate with our back-end architecture and fetch data from our database. During this post, I&#39;m going to test this API locally in a simple example to understand its technical usage.&lt;/p&gt;
 &lt;h2 id=&quot;heading-helmet&quot;&gt;Helmet&lt;/h2&gt;
 &lt;p&gt;Our first step is to install a new package called helmet to our dependencies. It is used to automatically secure our app by setting various HTTP headers.&lt;/p&gt;
@@ -454,7 +454,7 @@ Throughout the next blog post, I&#39;m going to connect this API with a database
 &lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
 &lt;br /&gt;
 Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td>[Creating a RESTful API easily using node.js | Part 1](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1)</td><td>&lt;h2 id=&quot;heading-what-is-a-restful-api&quot;&gt;What is a RESTful API?&lt;/h2&gt;
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1}>Creating a RESTful API easily using node.js | Part 1</a></td><td>&lt;h2 id=&quot;heading-what-is-a-restful-api&quot;&gt;What is a RESTful API?&lt;/h2&gt;
 &lt;p&gt;First off, an API, short for Application Programming Interface, is simply a way of communication between two or more services, sometimes described as a mediator between users/clients &amp;amp; resources/services they request.
 RESTful APIs, however, is a set of principles that conforms to the constraints of REST architecture style and thus allowing for integration with RESTful web services.&lt;/p&gt;
 &lt;h2 id=&quot;heading-step1-initializing-a-new-project&quot;&gt;Step.1: Initializing a new project&lt;/h2&gt;
@@ -532,7 +532,7 @@ cd ./myProject
 &lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
 &lt;br /&gt;
 Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td>[Send emails from your website to any user super easily!](https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily)</td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily}>Send emails from your website to any user super easily!</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;First of all, let me give you a heads up of what I&#39;m going to be talking about, and the purpose of this blog. 
 In today&#39;s world, almost every website or web-app sends all kinds of emails to their respective users, each with a distinct functionality or purpose.&lt;/p&gt;
 &lt;h2 id=&quot;heading-purpose-of-sending-such-emails&quot;&gt;Purpose of sending such emails&lt;/h2&gt;
