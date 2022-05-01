@@ -113,10 +113,10 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br/>
 
 <div style="width: 100%; display: flex; justify-content: center; align-items: center">
-    <table>
-      <tr><th>Post ✍🏼</th><th>Date of writing ⏲</th></tr>
-      <!-- BLOG-POST-LIST:START --><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3">Creating a RESTful API easily using node.js | Part 3</a></td><td>Mon Apr 25 2022 8:40 PM</td></tr><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2">Creating a RESTful API easily using node.js | Part 2</a></td><td>Mon Apr 25 2022 3:07 AM</td></tr><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1">Creating a RESTful API easily using node.js | Part 1</a></td><td>Tue Apr 19 2022 1:05 AM</td></tr><tr><td><a href="https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily">Send emails from your website to any user super easily!</a></td><td>Thu Apr 07 2022 9:49 PM</td></tr><!-- BLOG-POST-LIST:END -->
-    </table>
+<table>
+  <tr><th>Post ✍🏼</th><th>Date of writing ⏲</th></tr>
+  <!-- BLOG-POST-LIST:START --><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3">Creating a RESTful API easily using node.js | Part 3</a></td><td>Mon Apr 25 2022 8:40 PM</td></tr><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2">Creating a RESTful API easily using node.js | Part 2</a></td><td>Mon Apr 25 2022 3:07 AM</td></tr><tr><td><a href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1">Creating a RESTful API easily using node.js | Part 1</a></td><td>Tue Apr 19 2022 1:05 AM</td></tr><tr><td><a href="https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily">Send emails from your website to any user super easily!</a></td><td>Thu Apr 07 2022 9:49 PM</td></tr><!-- BLOG-POST-LIST:END -->
+</table>
 </div>
 
 <br />
