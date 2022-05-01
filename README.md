@@ -113,7 +113,7 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br/>
 
 <table>
-  <tr><th>Title</th><th>Link</th></tr>
+  <tr><th>Title</th><th>Link</th><th>Description</th><th>Categories</th></tr>
   <!-- BLOG-POST-LIST:START --><tr><td>Creating a RESTful API easily using node.js | Part 3</td><td>https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3</td></tr><tr><td>Creating a RESTful API easily using node.js | Part 2</td><td>https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2</td></tr><tr><td>Creating a RESTful API easily using node.js | Part 1</td><td>https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1</td></tr><tr><td>Send emails from your website to any user super easily!</td><td>https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily</td></tr><!-- BLOG-POST-LIST:END -->
 </table>
 
