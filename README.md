@@ -80,11 +80,9 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br />
 <br />
 
-<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
-  <h2 align="center" style='display: flex; height: 100%; max-width: 240px; padding-bottom: 12px; justify-content: center; align-items: center' >
+<h2 align="center" style='display: flex; justify-content: center; align-items: center; max-width: 240px; padding-bottom: 12px' >
     <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=180&height=35&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest projects" />&nbsp;<img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="35px">
-  </h2>
-</div>
+</h2>
 
 <br/>
 
@@ -104,11 +102,9 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br />
 <br />
 
-<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
-  <h2 align="center" style='display: flex; height: 100%; max-width: 320px; padding-bottom: 12px; justify-content: center; align-items: center' >
+<h2 align="center" style='display: flex; justify-content: center; align-items: center; max-width: 320px; padding-bottom: 12px' >
     <img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=240&height=35&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" />&nbsp;<img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="35px">
-  </h2>
-</div>
+</h2>
 
 <br/>
 
@@ -122,11 +118,9 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br />
 <br />
 
-<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
-  <h2 align="center" style='display: flex; height: 100%; max-width: 240px; padding-bottom: 12px; justify-content: center; align-items: center' >
+<h2 align="center" style='display: flex; justify-content: center; align-items: center; max-width: 240px; padding-bottom: 12px' >
     <img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="35px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=22&center=true&vCenter=true&width=160&height=35&lines=%F0%9D%95%84%F0%9D%95%AA+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%A4" alt="My stats" />&nbsp;<img src="https://media.giphy.com/media/PmdWKodlTy9dKJccrJ/giphy.gif" width="35px">
-  </h2>
-</div>
+</h2>
 
 <br/>
 
@@ -145,11 +139,9 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br>
 <br>
 
-<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
-  <h2 align="center" style='display: flex; height: 100%; max-width: 400px; padding-bottom: 12px; justify-content: center; align-items: center' >
+<h2 align="center" style='display: flex; justify-content: center; align-items: center; max-width: 400px; padding-bottom: 12px' >
     <img src="https://media.giphy.com/media/fw3XuXcz1p1AZdZOH8/giphy.gif" width="35px" />&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=26&center=true&vCenter=true&width=330&height=35&lines=%F0%9D%94%BE%F0%9D%95%9A%F0%9D%95%A5%E2%84%8D%F0%9D%95%A6%F0%9D%95%93+%F0%9D%94%B8%F0%9D%95%94%F0%9D%95%99%F0%9D%95%9A%F0%9D%95%96%F0%9D%95%A7%F0%9D%95%96%F0%9D%95%9E%F0%9D%95%96%F0%9D%95%9F%F0%9D%95%A5%F0%9D%95%A4" alt="Github achievements" />&nbsp;<img src="https://media.giphy.com/media/fw3XuXcz1p1AZdZOH8/giphy.gif" width="35px" />
-  </h2>
-</div>
+</h2>
 
 <br/>
 
@@ -160,11 +152,9 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br>
 <br>
 
-<div style='width: 100%; display: flex; justify-content: center; align-items: center'>
-  <h2 align="center" style='display: flex; height: 100%; max-width: 440px; padding-bottom: 12px; justify-content: center; align-items: center' >
+<h2 align="center" style='display: flex; justify-content: center; align-items: center; max-width: 440px; padding-bottom: 12px' >
     <img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif?raw=true" width="60px">&nbsp;<img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=26&center=true&vCenter=true&width=320&height=35&lines=%F0%9D%95%83%F0%9D%95%96%F0%9D%95%A5%F0%9D%95%A4+%F0%9D%94%BE%F0%9D%95%96%F0%9D%95%A5+%F0%9D%95%80%F0%9D%95%9F+%F0%9D%95%8B%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%94%F0%9D%95%99!" alt="Lets get in touch!" />&nbsp;<img src="https://github.com/SatYu26/SatYu26/blob/master/Assets/Handshake.gif?raw=true" width="60px">
-  </h2>
-</div>
+</h2>
 
 <br />
 
