@@ -13,9 +13,9 @@
   <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/jRf5fsn8G6YaogAWxn/giphy.gif"></a>
 </p>
 
-I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br> 
-I tend to Focus on small business & startups to stand out with a solid online presence 🙌🏼 <br> 
-I'm a problem solving enthusiast, passionate for learning new languages, frameworks, and🆕🆒stuff!<br> 
+I'm Ali Shour, a Freelance Full Stack Web Developer & UI designer 🚀 <br>
+I tend to Focus on small business & startups to stand out with a solid online presence 🙌🏼 <br>
+I'm a problem solving enthusiast, passionate for learning new languages, frameworks, and🆕🆒stuff!<br>
 
 <h4>My crafted web experiences are:</h4>
 
@@ -26,6 +26,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 - **Blazing fast response ⚡️**
 - **SEO friendly 🔍**
 - **Pixel-perfect code ✨**
+- **Test Update ✨**
 
 <h4> 📜 &nbsp;Certified by:</h4>
 
@@ -33,7 +34,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 [![freecodecamp](https://img.shields.io/badge/free%20code%20camp-27273D?style=for-the-badge&logo=freecodecamp&logoColor=white&link=https://www.freecodecamp.org/)](https://www.freecodecamp.org/)
 
 <span width="100%">&nbsp;</span>
- 
+
 <br>
 
 <h2 align="center">
@@ -43,44 +44,44 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br/>
 
 - 🌐 &nbsp; Front-end: &nbsp;
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&link=https://html5.org/)](https://html5.org/)
-[![MARKDOWN](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white&link=https://www.markdownguide.org/)](https://www.markdownguide.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&link=https://www.w3.org/Style/CSS/Overview.en.html)](https://www.w3.org/Style/CSS/Overview.en.html)
-[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&link=https://www.javascript.com/)](https://www.javascript.com/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&link=https://reactjs.org/)](https://reactjs.org/)
-[![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white&link=https://redux.js.org/)](https://redux.js.org/)
-[![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&link=https://nextjs.org/)](https://nextjs.org/)
-[![Gatsby.js](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white&link=https://www.gatsbyjs.com/)](https://www.gatsbyjs.com/)
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&link=https://html5.org/)](https://html5.org/)
+  [![MARKDOWN](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white&link=https://www.markdownguide.org/)](https://www.markdownguide.org/)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&link=https://www.w3.org/Style/CSS/Overview.en.html)](https://www.w3.org/Style/CSS/Overview.en.html)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&link=https://www.javascript.com/)](https://www.javascript.com/)
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&link=https://reactjs.org/)](https://reactjs.org/)
+  [![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white&link=https://redux.js.org/)](https://redux.js.org/)
+  [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&link=https://nextjs.org/)](https://nextjs.org/)
+  [![Gatsby.js](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white&link=https://www.gatsbyjs.com/)](https://www.gatsbyjs.com/)
 
 - 🛢 &nbsp; Back-end: &nbsp;
-[![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&link=https://nodejs.org/)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white&link=https://expressjs.com/)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/)
-[![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=JSON&logoColor=white&link=https://www.json.org/)](https://www.json.org/)
-[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white&link=https://jwt.io/)](https://jwt.io/)
-[![Npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/)](https://www.npmjs.com/)
-[![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white&link=https://stripe.com/)](https://stripe.com/)
+  [![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&link=https://nodejs.org/)](https://nodejs.org/)
+  [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white&link=https://expressjs.com/)](https://expressjs.com/)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/)
+  [![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=JSON&logoColor=white&link=https://www.json.org/)](https://www.json.org/)
+  [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white&link=https://jwt.io/)](https://jwt.io/)
+  [![Npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/)](https://www.npmjs.com/)
+  [![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white&link=https://stripe.com/)](https://stripe.com/)
 
 - 🖌 &nbsp; UI Frameworks: &nbsp;
-[![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white&link=https://sass-lang.com/)](https://sass-lang.com/)
-[![Material_UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white&link=https://mui.com/)](https://mui.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&link=https://react-bootstrap.github.io/)](https://react-bootstrap.github.io/)
-[![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white&link=https://www.styled-components.com/)](https://www.styled-components.com/)
+  [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white&link=https://sass-lang.com/)](https://sass-lang.com/)
+  [![Material_UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white&link=https://mui.com/)](https://mui.com/)
+  [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&link=https://react-bootstrap.github.io/)](https://react-bootstrap.github.io/)
+  [![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white&link=https://www.styled-components.com/)](https://www.styled-components.com/)
 
 - 💻 &nbsp; Deployment: &nbsp;
-[![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&link=https://git-scm.com/)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/)](https://github.com/)
-[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white&link=https://www.netlify.com/)](https://www.netlify.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white&link=https://vercel.com/)](https://vercel.com/)
-[![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black&link=https://firebase.google.com/)](https://firebase.google.com/)
-[![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&link=https://www.heroku.com/)](https://www.heroku.com/)
+  [![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&link=https://git-scm.com/)](https://git-scm.com/)
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/)](https://github.com/)
+  [![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white&link=https://www.netlify.com/)](https://www.netlify.com/)
+  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white&link=https://vercel.com/)](https://vercel.com/)
+  [![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black&link=https://firebase.google.com/)](https://firebase.google.com/)
+  [![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&link=https://www.heroku.com/)](https://www.heroku.com/)
 
 - 🔧 &nbsp; Tools: &nbsp;
-[![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white&link=https://code.visualstudio.com/)](https://code.visualstudio.com/)
-[![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important&link=https://www.sublimetext.com/)](https://www.sublimetext.com/)
-[![codesandbox](https://img.shields.io/badge/Codesandbox-000000?style=for-the-badge&logo=CodeSandbox&logoColor=white&link=https://codesandbox.io/)](https://codesandbox.io/)
-[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&link=https://www.figma.com/)](https://www.figma.com/)
+  [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white&link=https://code.visualstudio.com/)](https://code.visualstudio.com/)
+  [![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important&link=https://www.sublimetext.com/)](https://www.sublimetext.com/)
+  [![codesandbox](https://img.shields.io/badge/Codesandbox-000000?style=for-the-badge&logo=CodeSandbox&logoColor=white&link=https://codesandbox.io/)](https://codesandbox.io/)
+  [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
+  [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&link=https://www.figma.com/)](https://www.figma.com/)
 
 <br />
 <br />
@@ -91,17 +92,17 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 
 <br/>
 
-| 💻 **Main Stack** | 🚀 **Projects (Ordered by most recent projects 🆕)** | 📕 **Repo** | 🌐 **URL** |
-|-|-|-|-|
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div> | LetsPinIt app 📌 Pin quick custom-styled notes on the go! | [![LetsPinIt-app](https://img.shields.io/static/v1?label=LetsPinIt&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/letsPinIt-app.git) | <a  href="https://lets-pin-it.vercel.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="mongoDB" height="35"/>&nbsp;<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge" alt="express" height="30" width="70"/><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="35"/>&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="node.js" height="35"/></div> | imoments app 📱 A full-stack social media application | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git) | <a  href="https://imoments.netlify.app/#/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="mongoDB" height="35"/></div> | istyle Fashion store 👚 A full-stack E-commerce application | [![istyle-fashion-store](https://img.shields.io/static/v1?label=istyle-fashion-store&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/istyle-fashion-store.git) | 🚧 Under<br />Construction |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div> | Movie-Mania app 📽️ Latest movies/series navigator app | [![moviemania](https://img.shields.io/static/v1?label=MovieMania&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/MovieMania.git) | <a  href="https://moviemania-7815b.web.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/gatsby.svg" alt="gatsby" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" alt="gsap" height="35"/></div> | Go-digital Design 🖥️ Landing page for an online Marketing agency in <img src="https://cdn.worldvectorlogo.com/logos/lebanonc.svg" alt="lebanon" align="center" height="14"/>&nbsp; (Freelance Project) | [![go-digital](https://img.shields.io/static/v1?label=GoDigital-design&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/go-digital.git) | <a  href="https://godigitaldesign.netlify.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div> | WoRank app 🌎 A world ranking application | [![worank-app](https://img.shields.io/static/v1?label=WoRank&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/WoRank.git) | <a  href="https://wo-rank.vercel.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="node.js" height="35"/></div> | PINTASK 📝 A Task Tracker app with a JSON server | [![Pintask-app](https://img.shields.io/static/v1?label=Pintask&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/PINTASK.git) | <a  href="https://pintask-46374.web.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="firebase" height="35"/></div> | Snapbook 🖼️ A photo gallery app built with react, sass, and firebase (storage, firestore database, hosting) | [![Snapbook-app](https://img.shields.io/static/v1?label=Snapbook&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/snapbook.git) | <a  href="https://snapbook-a8a05.web.app/">Live site</a> |
-| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div> | Personal Portfolio website 💼 old school, but new one in the works 😁 | [![portfolio](https://img.shields.io/static/v1?label=Portfolio&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/portfolio.git) | <a  href="https://www.iamshour.com/">Live site</a> |
+| 💻 **Main Stack**                                                                                                                                                                                                                                                                                                                                                                                                                           | 🚀 **Projects (Ordered by most recent projects 🆕)**                                                                                                                                                   | 📕 **Repo**                                                                                                                                                                                                         | 🌐 **URL**                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div>                                                                                                                                                                                                                          | LetsPinIt app 📌 Pin quick custom-styled notes on the go!                                                                                                                                              | [![LetsPinIt-app](https://img.shields.io/static/v1?label=LetsPinIt&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/letsPinIt-app.git)                          | <a  href="https://lets-pin-it.vercel.app/">Live site</a>      |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="mongoDB" height="35"/>&nbsp;<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge" alt="express" height="30" width="70"/><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="35"/>&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="node.js" height="35"/></div> | imoments app 📱 A full-stack social media application                                                                                                                                                  | [![imoments-app](https://img.shields.io/static/v1?label=imoments-app&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/imoments-app.git)                         | <a  href="https://imoments.netlify.app/#/">Live site</a>      |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="mongoDB" height="35"/></div>                                                                                                                                                                                                                     | istyle Fashion store 👚 A full-stack E-commerce application                                                                                                                                            | [![istyle-fashion-store](https://img.shields.io/static/v1?label=istyle-fashion-store&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/istyle-fashion-store.git) | 🚧 Under<br />Construction                                    |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div>                                                                                                                                                                                                                            | Movie-Mania app 📽️ Latest movies/series navigator app                                                                                                                                                  | [![moviemania](https://img.shields.io/static/v1?label=MovieMania&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/MovieMania.git)                               | <a  href="https://moviemania-7815b.web.app/">Live site</a>    |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/gatsby.svg" alt="gatsby" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" alt="gsap" height="35"/></div>                                                                                                                                                                                                                    | Go-digital Design 🖥️ Landing page for an online Marketing agency in <img src="https://cdn.worldvectorlogo.com/logos/lebanonc.svg" alt="lebanon" align="center" height="14"/>&nbsp; (Freelance Project) | [![go-digital](https://img.shields.io/static/v1?label=GoDigital-design&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/go-digital.git)                         | <a  href="https://godigitaldesign.netlify.app/">Live site</a> |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="next.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div>                                                                                                                                                                                                                          | WoRank app 🌎 A world ranking application                                                                                                                                                              | [![worank-app](https://img.shields.io/static/v1?label=WoRank&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/WoRank.git)                                       | <a  href="https://wo-rank.vercel.app/">Live site</a>          |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="node.js" height="35"/></div>                                                                                                                                                                                                                 | PINTASK 📝 A Task Tracker app with a JSON server                                                                                                                                                       | [![Pintask-app](https://img.shields.io/static/v1?label=Pintask&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/PINTASK.git)                                    | <a  href="https://pintask-46374.web.app/">Live site</a>       |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="react.js" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="firebase" height="35"/></div>                                                                                                                                                                                                                 | Snapbook 🖼️ A photo gallery app built with react, sass, and firebase (storage, firestore database, hosting)                                                                                            | [![Snapbook-app](https://img.shields.io/static/v1?label=Snapbook&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/snapbook.git)                                 | <a  href="https://snapbook-a8a05.web.app/">Live site</a>      |
+| <div align="center"><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" height="35"/>&nbsp;&nbsp;<img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="sass" height="35"/></div>                                                                                                                                                                                                                                         | Personal Portfolio website 💼 old school, but new one in the works 😁                                                                                                                                  | [![portfolio](https://img.shields.io/static/v1?label=Portfolio&message=%20&color=000605&logo=github&logoColor=white&labelColor=000605)](https://github.com/iamshour/portfolio.git)                                  | <a  href="https://www.iamshour.com/">Live site</a>            |
 
 <br />
 <br />
@@ -114,6 +115,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br/>
 
 <!-- BLOG-POST-LIST:START -->
+
 - [Creating a RESTful API easily using node.js | Part 3](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3)
 - [Creating a RESTful API easily using node.js | Part 2](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2)
 - [Creating a RESTful API easily using node.js | Part 1](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1)
@@ -161,6 +163,7 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 </div>
 
 ---
+
 <br />
 
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white&link=https://www.iamshour.com/)](https://www.iamshour.com/)
@@ -189,14 +192,14 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <h2 align="center">𝐆𝐫𝐞𝐞𝐭𝐢𝐧𝐠𝐬, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝔻𝔼𝕍𝕤 /> &nbsp; <img src="https://iamshour.github.io/hosted-assets/Hi.gif" width="26px"> </h2>
 
 istyle-fashion-store-link
-<a  href="https://istyle-fashion.vercel.app/">Live site</a> 
+<a  href="https://istyle-fashion.vercel.app/">Live site</a>
 
 <a href="https://www.iamshour.com/"><img width="250" align='right' src="https://media.giphy.com/media/5eLDrEaRGHegx2FeF2/giphy.gif"></a>
 
 <div align="center" >
-  
+
 <a  href="https://github.com/iamshour">
-  
+
 <img width="40%" src="https://github-readme-stats-iamshour.vercel.app/api?username=iamshour&theme=tokyonight&show_icons=true" alt="iamshour's github stats" href="https://github.com/iamshour" />
 <img width="40%" src="https://github-readme-streak-stats.herokuapp.com?user=iamshour&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D" alt="iamshour's top langs" href="https://github.com/sp-xd" />
 
