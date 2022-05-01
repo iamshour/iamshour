@@ -36,12 +36,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
  
 <br>
 
-<div align="center">
+<h2 align="center">
   <img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=200&height=40&lines=%F0%9D%95%8B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%99+%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%92%F0%9D%95%94%F0%9D%95%9C" alt="Texh stack" /><img src="https://media.giphy.com/media/72QU9rBiYs23s5JBGp/giphy.gif" width="40px">
-</div>
+</h2>
 
----
-<br />
+<br/>
 
 - 🌐 &nbsp; Front-end: &nbsp;
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&link=https://html5.org/)](https://html5.org/)
@@ -86,12 +85,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 <br />
 
-<div align="center">
+<h2 align="center">
   <img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=250&height=40&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%E2%84%99%F0%9D%95%A3%F0%9D%95%A0%F0%9D%95%9B%F0%9D%95%96%F0%9D%95%94%F0%9D%95%A5%F0%9D%95%A4" alt="Latest Projects" /><img src="https://media.giphy.com/media/J8aAPKrAekywyYiyAJ/giphy.gif" width="50px">
-</div>
+</h2>
 
----
-<br />
+<br/>
 
 | 💻 **Main Stack** | 🚀 **Projects (Ordered by most recent projects 🆕)** | 📕 **Repo** | 🌐 **URL** |
 |-|-|-|-|
@@ -109,12 +107,11 @@ I'm a problem solving enthusiast, passionate for learning new languages, framewo
 <br />
 <br />
 
-<div align="center">
+<h2 align="center">
   <img src="https://media.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif" width="40px"><img src="https://readme-typing-svg.herokuapp.com?color=%2382B4F7&size=24&center=true&vCenter=true&width=280&height=40&lines=%F0%9D%95%83%F0%9D%95%92%F0%9D%95%A5%F0%9D%95%96%F0%9D%95%A4%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%9D%F0%9D%95%A0%F0%9D%95%98+%F0%9D%95%A1%F0%9D%95%A0%F0%9D%95%A4%F0%9D%95%A5%F0%9D%95%A4" alt="Latest blog posts" /><img src="https://media4.giphy.com/media/xrqrTNO8f39IjSDVBz/giphy.gif?cid=ecf05e47ddlqzu7cn6w3xwo9lnnk10ydbbxoafdrpp0u04pq&rid=giphy.gif&ct=s" width="40px">
-</div>
+</h2>
 
----
-<br />
+<br/>
 
 <!-- BLOG-POST-LIST:START -->
 - [Creating a RESTful API easily using node.js | Part 3](https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3)
