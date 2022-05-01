@@ -14,6 +14,6 @@ jobs:
       - name: Pull in dev.to posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://blog.iamshour.com/rss.xml"
+          feed_list: "https://dev.to/feed/iamshour"
           template: <tr><td><a href="$url">$title</a></td><td>$categories</td></tr>
           disable_html_encoding: "true"
