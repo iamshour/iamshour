@@ -113,7 +113,7 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br/>
 
 <table>
-  <tr><th>Title</th><th>Description</th><th>Categories</th></tr>
+  <tr><th>Title</th><th>Categories</th></tr>
   <!-- BLOG-POST-LIST:START --><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3}>Creating a RESTful API easily using node.js | Part 3</a></td><td><h2 id="heading-introduction">Introduction</h2>
 <p>Throughout the two previous parts, we've learned how to setup a very basic RESTful API from scratch, and tested this API locally in a very simple example. In this post, we're going to integrate this API with MongoDB Atlas, and use mongoose to manipulate our database collection by fetching, editing, and deleting some data. Fist step is to open your project with your favorite code editor (VS code in my case). You can download the source code from the previous part by cloning/downloading this <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing.git">repo</a>. Or Download Full project by cloning/downloading this <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration">repo</a>.</p>
 <h2 id="heading-adding-new-packages">Adding new packages</h2>
