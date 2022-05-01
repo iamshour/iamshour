@@ -114,537 +114,537 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 
 <table>
   <tr><th>Title</th><th>Description</th><th>Categories</th></tr>
-  <!-- BLOG-POST-LIST:START --><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3}>Creating a RESTful API easily using node.js | Part 3</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Throughout the two previous parts, we&#39;ve learned how to setup a very basic RESTful API from scratch, and tested this API locally in a very simple example. In this post, we&#39;re going to integrate this API with MongoDB Atlas, and use mongoose to manipulate our database collection by fetching, editing, and deleting some data. Fist step is to open your project with your favorite code editor &lpar;VS code in my case&rpar;. You can download the source code from the previous part by cloning/downloading this &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing.git&quot;&gt;repo&lt;/a&gt;. Or Download Full project by cloning/downloading this &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;heading-adding-new-packages&quot;&gt;Adding new packages&lt;/h2&gt;
-&lt;p&gt;First of all, let&#39;s add some new packages we&#39;re going to use in our project. Open up the terminal, and make sure you&#39;re in the root directory of your project, then run the following script:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;npm&lt;/span&gt; i dotenv mongoose
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The first package &lpar;dotenv&rpar; is used to add environment variables in our project. The second package &lpar;mongoose&rpar; is just a JS library that creates a connection between MongoDB and the Express web app framework fluently.&lt;/p&gt;
-&lt;h2 id=&quot;heading-file-structure&quot;&gt;File Structure&lt;/h2&gt;
-&lt;p&gt;Our next step is to create an intuitive, easy-to-use file structure for our project. This step is vital for the long-term life of your project for many reasons. For starters, a messy structure and code often leads to critical issues in the future. However, a good file structure helps us not only write cleaner and readable code, but also avoid repetition by writing reusable pieces of code across our app, in addition to ability to add new features and blocks of code &lpar;middleware&rpar; without disrupting any existing code.&lt;/p&gt;
-&lt;p&gt;Let&#39;s take a look at the structure I&#39;m initially going to follow:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918563849/DNTQBcOzz.PNG&quot; alt=&quot;file-structure.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Each folder serves its unique purpose:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Routes folder contains each route file for our project&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Controllers folder contains the logic that each specific route performs&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Models folder containing all the models created &lpar;each model is an instance f a document&rpar;. Models are responsible for creating and reading documents from the underlying MongoDB database&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Middleware folder contains each middleware function we may for specific routes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Utils folder contains useful utility functions&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;.env file which contains all environment variables we&#39;re going to use&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-signing-up-with-mongodb-atlas&quot;&gt;Signing up with MongoDB Atlas&lt;/h2&gt;
-&lt;p&gt;Next, we&#39;re going to &lpar;sign up &lt;a target=&quot;_blank&quot; href=&quot;https://www.mongodb.com/cloud/atlas/register2&quot;&gt;here&lt;/a&gt;&rpar; in order to integrate our API with mongoDB Atlas services. After signing up, follow the steps below:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Choose the Shared Cluster option &lpar;free tier option&rpar;, and click &#39;Create Cluster&#39;&lt;/li&gt;
-&lt;li&gt;Add a username and password under the &#39;How would you like to authenticate your connection?&#39; option and click &#39;Add user&#39;. Make sure to save those credentials to use later&lt;/li&gt;
-&lt;li&gt;Add an IP address to access the project. For now, just add 0.0.0.0 and click &#39;Add Entry&#39;&lt;/li&gt;
-&lt;li&gt;After finishing all the above steps, click &#39;Finish and Close&#39; on the bottom. Note that creating a cluster would take about 3-5 mins&lt;/li&gt;
-&lt;li&gt;Next, click on connect button -&amp;gt; Connect your application -&amp;gt; Copy the connection string provided&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918835493/LAgPUNQVM.PNG&quot; alt=&quot;pic-2.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;6.&lt;/code&gt; Open .env file which we created earlier, and add the following &lpar;Make sure to replace &lt;code&gt;yourusername&lt;/code&gt; and &lt;code&gt;&amp;lt;password&amp;gt;&lt;/code&gt; with your actual credentials&rpar;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-attr&quot;&gt;MONGO_URL&lt;/span&gt; = mongodb+srv://yourusername:&amp;lt;password&amp;gt;@cluster0.yv.mongodb.net/myFirstDatabase?retryWrites=&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&amp;amp;w=majority
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-creating-a-monogodb-connection&quot;&gt;Creating a monogoDB connection&lt;/h2&gt;
-&lt;p&gt;After setting up our cluster, we&#39;re going to connect to it right from our application.&lt;/p&gt;
-&lt;p&gt;First create a new file inside Utils folder called connectDB.js then navigate inside the file and add the following helper function:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; mongoose &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;mongoose&quot;&lt;/span&gt;
+  <!-- BLOG-POST-LIST:START --><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-3}>Creating a RESTful API easily using node.js | Part 3</a></td><td><h2 id="heading-introduction">Introduction</h2>
+<p>Throughout the two previous parts, we've learned how to setup a very basic RESTful API from scratch, and tested this API locally in a very simple example. In this post, we're going to integrate this API with MongoDB Atlas, and use mongoose to manipulate our database collection by fetching, editing, and deleting some data. Fist step is to open your project with your favorite code editor (VS code in my case). You can download the source code from the previous part by cloning/downloading this <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing.git">repo</a>. Or Download Full project by cloning/downloading this <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration">repo</a>.</p>
+<h2 id="heading-adding-new-packages">Adding new packages</h2>
+<p>First of all, let's add some new packages we're going to use in our project. Open up the terminal, and make sure you're in the root directory of your project, then run the following script:</p>
+<pre><code><span class="hljs-built_in">npm</span> i dotenv mongoose
+</code></pre><p>The first package (dotenv) is used to add environment variables in our project. The second package (mongoose) is just a JS library that creates a connection between MongoDB and the Express web app framework fluently.</p>
+<h2 id="heading-file-structure">File Structure</h2>
+<p>Our next step is to create an intuitive, easy-to-use file structure for our project. This step is vital for the long-term life of your project for many reasons. For starters, a messy structure and code often leads to critical issues in the future. However, a good file structure helps us not only write cleaner and readable code, but also avoid repetition by writing reusable pieces of code across our app, in addition to ability to add new features and blocks of code (middleware) without disrupting any existing code.</p>
+<p>Let's take a look at the structure I'm initially going to follow:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918563849/DNTQBcOzz.PNG" alt="file-structure.PNG" /></p>
+<p>Each folder serves its unique purpose:</p>
+<ul>
+<li><p>Routes folder contains each route file for our project</p>
+</li>
+<li><p>Controllers folder contains the logic that each specific route performs</p>
+</li>
+<li><p>Models folder containing all the models created (each model is an instance f a document). Models are responsible for creating and reading documents from the underlying MongoDB database</p>
+</li>
+<li><p>Middleware folder contains each middleware function we may for specific routes</p>
+</li>
+<li><p>Utils folder contains useful utility functions</p>
+</li>
+<li><p>.env file which contains all environment variables we're going to use</p>
+</li>
+</ul>
+<h2 id="heading-signing-up-with-mongodb-atlas">Signing up with MongoDB Atlas</h2>
+<p>Next, we're going to (sign up <a target="_blank" href="https://www.mongodb.com/cloud/atlas/register2">here</a>) in order to integrate our API with mongoDB Atlas services. After signing up, follow the steps below:</p>
+<ol>
+<li>Choose the Shared Cluster option (free tier option), and click 'Create Cluster'</li>
+<li>Add a username and password under the 'How would you like to authenticate your connection?' option and click 'Add user'. Make sure to save those credentials to use later</li>
+<li>Add an IP address to access the project. For now, just add 0.0.0.0 and click 'Add Entry'</li>
+<li>After finishing all the above steps, click 'Finish and Close' on the bottom. Note that creating a cluster would take about 3-5 mins</li>
+<li>Next, click on connect button -&gt; Connect your application -&gt; Copy the connection string provided</li>
+</ol>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918835493/LAgPUNQVM.PNG" alt="pic-2.PNG" /></p>
+<p><code>6.</code> Open .env file which we created earlier, and add the following (Make sure to replace <code>yourusername</code> and <code>&lt;password&gt;</code> with your actual credentials):</p>
+<pre><code><span class="hljs-attr">MONGO_URL</span> = mongodb+srv://yourusername:&lt;password&gt;@cluster0.yv.mongodb.net/myFirstDatabase?retryWrites=<span class="hljs-literal">true</span>&amp;w=majority
+</code></pre><h2 id="heading-creating-a-monogodb-connection">Creating a monogoDB connection</h2>
+<p>After setting up our cluster, we're going to connect to it right from our application.</p>
+<p>First create a new file inside Utils folder called connectDB.js then navigate inside the file and add the following helper function:</p>
+<pre><code><span class="hljs-keyword">import</span> mongoose <span class="hljs-keyword">from</span> <span class="hljs-string">"mongoose"</span>
 
 const options = {
-    useUnifiedTopology: &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
-    useNewUrlParser: &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
+    useUnifiedTopology: <span class="hljs-literal">true</span>,
+    useNewUrlParser: <span class="hljs-literal">true</span>,
 }
 
-const connectDb = &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-params&quot;&gt;&lpar;&rpar;&lt;/span&gt; =&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lpar;mongoose.connections[&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;].readyState&rpar; {
-        &lt;span class=&quot;hljs-built_in&quot;&gt;console&lt;/span&gt;.log&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;MongoDB already connected&quot;&lt;/span&gt;&rpar;
-        &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt;
+const connectDb = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (mongoose.connections[<span class="hljs-number">0</span>].readyState) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"MongoDB already connected"</span>)
+        <span class="hljs-keyword">return</span>
     }
-    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; mongoose.connect&lpar;process.env.MONGO_URL, options, &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-params&quot;&gt;&lpar;&rpar;&lt;/span&gt; =&amp;gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-built_in&quot;&gt;console&lt;/span&gt;.log&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Connected successfully to the DB!&quot;&lt;/span&gt;&rpar;
-    }&rpar;
+    <span class="hljs-keyword">return</span> mongoose.connect(process.env.MONGO_URL, options, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Connected successfully to the DB!"</span>)
+    })
 }
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;default&lt;/span&gt; connectDb
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-modifying-indexjs&quot;&gt;Modifying index.js&lt;/h2&gt;
-&lt;p&gt;Next, we&#39;ll modify our index.js file as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;express&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;cors&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;helmet&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;helmet&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;msgsRoute&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;./routes/msgs.js&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;dotenv&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;dotenv&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;connectDb&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;./utility/connectDb.js&quot;&lt;/span&gt;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connectDb
+</code></pre><h2 id="heading-modifying-indexjs">Modifying index.js</h2>
+<p>Next, we'll modify our index.js file as follows:</p>
+<pre><code><span class="hljs-keyword">import</span> <span class="hljs-title">express</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"express"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">cors</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"cors"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">helmet</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"helmet"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">msgsRoute</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"./routes/msgs.js"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">dotenv</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"dotenv"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">connectDb</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"./utility/connectDb.js"</span>
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;&lpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;process&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;env&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 5000
+<span class="hljs-title">const</span> <span class="hljs-title">app</span> <span class="hljs-operator">=</span> <span class="hljs-title">express</span>()
+<span class="hljs-title">const</span> <span class="hljs-title">port</span> <span class="hljs-operator">=</span> <span class="hljs-title">process</span>.<span class="hljs-title">env</span>.<span class="hljs-title">PORT</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 5000
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;corsOptions&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;origin&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;*&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;Access-Control-Allow-Origin&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-title&quot;&gt;optionSuccessStatus&lt;/span&gt;: 200,
+<span class="hljs-title">const</span> <span class="hljs-title">corsOptions</span> <span class="hljs-operator">=</span> {
+    <span class="hljs-title">origin</span>: <span class="hljs-string">"*"</span>,
+    <span class="hljs-string">"Access-Control-Allow-Origin"</span>: <span class="hljs-title"><span class="hljs-literal">true</span></span>,
+    <span class="hljs-title">optionSuccessStatus</span>: 200,
 }
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;corsOptions&lt;/span&gt;&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;urlencoded&lt;/span&gt;&lpar;{ &lt;span class=&quot;hljs-title&quot;&gt;extended&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt; }&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;helmet&lt;/span&gt;&lpar;&rpar;&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">cors</span>(<span class="hljs-title">corsOptions</span>))
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">urlencoded</span>({ <span class="hljs-title">extended</span>: <span class="hljs-title"><span class="hljs-literal">false</span></span> }))
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">json</span>())
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">helmet</span>())
 
-&lt;span class=&quot;hljs-title&quot;&gt;dotenv&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;config&lt;/span&gt;&lpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;connectDb&lt;/span&gt;&lpar;&rpar;
+<span class="hljs-title">dotenv</span>.<span class="hljs-title">config</span>()
+<span class="hljs-title">connectDb</span>()
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;/msgs&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;msgsRoute&lt;/span&gt;&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-string">"/msgs"</span>, <span class="hljs-title">msgsRoute</span>)
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;get&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;send&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Welcome to our RESTful API!&quot;&lt;/span&gt;&rpar;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">get</span>(<span class="hljs-string">"/"</span>, (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">send</span>(<span class="hljs-string">"Welcome to our RESTful API!"</span>)
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Something went wrong&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; 404
-    &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar;
-}&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 500&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-        &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;: {
-            &lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;,
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">const</span> <span class="hljs-title"><span class="hljs-keyword">error</span></span> <span class="hljs-operator">=</span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Something went wrong"</span>)
+    <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">=</span> 404
+    <span class="hljs-title">next</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>)
+})
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title"><span class="hljs-keyword">error</span></span>, <span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 500)
+    <span class="hljs-title">res</span>.<span class="hljs-title">json</span>({
+        <span class="hljs-title"><span class="hljs-keyword">error</span></span>: {
+            <span class="hljs-title">message</span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">message</span>,
         },
-    }&rpar;
-}&rpar;
+    })
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;listen&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;throw&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Error while connecting to the server&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;log&lt;/span&gt;&lpar;`&lt;span class=&quot;hljs-title&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;live&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;running&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;at&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;http&lt;/span&gt;:&lt;span class=&quot;hljs-comment&quot;&gt;//localhost:${port}`&rpar;&lt;/span&gt;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">listen</span>(<span class="hljs-title">port</span>, (<span class="hljs-title">err</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">if</span></span> (<span class="hljs-title">err</span>) <span class="hljs-title"><span class="hljs-keyword">throw</span></span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Error while connecting to the server"</span>)
+    <span class="hljs-title">console</span>.<span class="hljs-title">log</span>(`<span class="hljs-title">Server</span> <span class="hljs-title"><span class="hljs-keyword">is</span></span> <span class="hljs-title">live</span> <span class="hljs-title">and</span> <span class="hljs-title">running</span> <span class="hljs-title">at</span>: <span class="hljs-title">http</span>:<span class="hljs-comment">//localhost:${port}`)</span>
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The only changes we&#39;ve made from our setup in &lt;a target=&quot;_blank&quot; href=&quot;https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2&quot;&gt;part-2&lt;/a&gt; are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;imported the dotenv package at the top, then called config&lpar;&rpar; method on it &lpar;after app initialization&rpar;&lt;/li&gt;
-&lt;li&gt;imported our newly created helper function &lpar;connectDb&rpar; used to connect to our mongodb cluster, then called this function &lpar;after app initialization&rpar;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-creating-our-first-model&quot;&gt;Creating our first Model&lt;/h2&gt;
-&lt;p&gt;As mentioned before, models are responsible for creating and reading documents from the underlying MongoDB database. For example, most database collections contains a User model, which basically resembles an object containing some useful data about a user &lpar;name, email, password, bio, age, etc...&rpar;.&lt;/p&gt;
-&lt;p&gt;Lets create a Message model by first creating a file called message.js inside models folder, then add the following to the file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; mongoose &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;mongoose&quot;&lt;/span&gt;
+<span class="hljs-title">export</span> <span class="hljs-title">default</span> <span class="hljs-title">app</span>
+</code></pre><p>The only changes we've made from our setup in <a target="_blank" href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2">part-2</a> are:</p>
+<ul>
+<li>imported the dotenv package at the top, then called config() method on it (after app initialization)</li>
+<li>imported our newly created helper function (connectDb) used to connect to our mongodb cluster, then called this function (after app initialization)</li>
+</ul>
+<h2 id="heading-creating-our-first-model">Creating our first Model</h2>
+<p>As mentioned before, models are responsible for creating and reading documents from the underlying MongoDB database. For example, most database collections contains a User model, which basically resembles an object containing some useful data about a user (name, email, password, bio, age, etc...).</p>
+<p>Lets create a Message model by first creating a file called message.js inside models folder, then add the following to the file:</p>
+<pre><code><span class="hljs-keyword">import</span> mongoose <span class="hljs-keyword">from</span> <span class="hljs-string">"mongoose"</span>
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; messageSchema = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; mongoose.Schema&lpar;
+<span class="hljs-keyword">const</span> messageSchema = <span class="hljs-keyword">new</span> mongoose.Schema(
  {
   content: {
-   &lt;span class=&quot;hljs-keyword&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;hljs-built_in&quot;&gt;String&lt;/span&gt;,
-   required: [&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Please provide message content&quot;&lt;/span&gt;],
+   <span class="hljs-keyword">type</span>: <span class="hljs-built_in">String</span>,
+   required: [<span class="hljs-literal">true</span>, <span class="hljs-string">"Please provide message content"</span>],
   },
  },
  {
-  timestamps: &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;,
+  timestamps: <span class="hljs-literal">true</span>,
  }
-&rpar;
+)
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; Dataset = mongoose.models.message || mongoose.model&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;message&quot;&lt;/span&gt;, messageSchema&rpar;
+<span class="hljs-keyword">const</span> Dataset = mongoose.models.message || mongoose.model(<span class="hljs-string">"message"</span>, messageSchema)
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;default&lt;/span&gt; Dataset
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-modifying-msgs-route&quot;&gt;Modifying msgs route&lt;/h2&gt;
-&lt;p&gt;In the previous part, we created a msgs route in the routes folder which gathers all http methods related to msgs collection. Let&#39;s edit this file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; express &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &quot;express&quot;
-&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; { addMsg, deleteMsg, getMsgs, updateMsg } &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &quot;../controllers/msgs.js&quot;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Dataset
+</code></pre><h2 id="heading-modifying-msgs-route">Modifying msgs route</h2>
+<p>In the previous part, we created a msgs route in the routes folder which gathers all http methods related to msgs collection. Let's edit this file:</p>
+<pre><code><span class="hljs-keyword">import</span> express <span class="hljs-keyword">from</span> "express"
+<span class="hljs-keyword">import</span> { addMsg, deleteMsg, getMsgs, updateMsg } <span class="hljs-keyword">from</span> "../controllers/msgs.js"
 
-const router = express.Router&lpar;&rpar;
+const router = express.Router()
 
-router.&lt;span class=&quot;hljs-keyword&quot;&gt;get&lt;/span&gt;&lpar;&quot;/&quot;, getMsgs&rpar;
-router.post&lpar;&quot;/&quot;, addMsg&rpar;
-router.put&lpar;&quot;/:msgId&quot;, updateMsg&rpar;
-router.&lt;span class=&quot;hljs-keyword&quot;&gt;delete&lt;/span&gt;&lpar;&quot;/:msgId&quot;, deleteMsg&rpar;
+router.<span class="hljs-keyword">get</span>("/", getMsgs)
+router.post("/", addMsg)
+router.put("/:msgId", updateMsg)
+router.<span class="hljs-keyword">delete</span>("/:msgId", deleteMsg)
 
-export &lt;span class=&quot;hljs-keyword&quot;&gt;default&lt;/span&gt; router
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the above modification, we&#39;ve separated the logic of each http method &lpar;GET, POST, PUT, DELETE&rpar; by importing new helper functions created in a new separate controller file, which resides inside the controllers folder. So let&#39;s navigate to this newly created file and add the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Message&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;../models/message.js&quot;&lt;/span&gt;
+export <span class="hljs-keyword">default</span> router
+</code></pre><p>In the above modification, we've separated the logic of each http method (GET, POST, PUT, DELETE) by importing new helper functions created in a new separate controller file, which resides inside the controllers folder. So let's navigate to this newly created file and add the following:</p>
+<pre><code><span class="hljs-keyword">import</span> <span class="hljs-title">Message</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"../models/message.js"</span>
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;getMsgs&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;async&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;msgs&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Message&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;find&lt;/span&gt;&lpar;&rpar;
+<span class="hljs-title">export</span> <span class="hljs-title">const</span> <span class="hljs-title">getMsgs</span> <span class="hljs-operator">=</span> <span class="hljs-title">async</span> (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">try</span></span> {
+        <span class="hljs-title">const</span> <span class="hljs-title">msgs</span> <span class="hljs-operator">=</span> <span class="hljs-title">await</span> <span class="hljs-title">Message</span>.<span class="hljs-title">find</span>()
 
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;201&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;msgs&lt;/span&gt;&rpar;
-    } &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar; {
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;500&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-            &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;,
-        }&rpar;
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(201).<span class="hljs-title">json</span>(<span class="hljs-title">msgs</span>)
+    } <span class="hljs-title"><span class="hljs-keyword">catch</span></span> (<span class="hljs-title"><span class="hljs-keyword">error</span></span>) {
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(500).<span class="hljs-title">json</span>({
+            <span class="hljs-title"><span class="hljs-built_in">msg</span></span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>,
+        })
     }
 }
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;addMsg&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;async&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;newMsg&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Message&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;create&lt;/span&gt;&lpar;{ &lt;span class=&quot;hljs-title&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;body&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;content&lt;/span&gt; }&rpar;
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;201&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;newMsg&lt;/span&gt;&rpar;
-    } &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar; {
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;500&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-            &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;,
-        }&rpar;
+<span class="hljs-title">export</span> <span class="hljs-title">const</span> <span class="hljs-title">addMsg</span> <span class="hljs-operator">=</span> <span class="hljs-title">async</span> (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">try</span></span> {
+        <span class="hljs-title">const</span> <span class="hljs-title">newMsg</span> <span class="hljs-operator">=</span> <span class="hljs-title">await</span> <span class="hljs-title">Message</span>.<span class="hljs-title">create</span>({ <span class="hljs-title">content</span>: <span class="hljs-title">req</span>.<span class="hljs-title">body</span>.<span class="hljs-title">content</span> })
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(201).<span class="hljs-title">json</span>(<span class="hljs-title">newMsg</span>)
+    } <span class="hljs-title"><span class="hljs-keyword">catch</span></span> (<span class="hljs-title"><span class="hljs-keyword">error</span></span>) {
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(500).<span class="hljs-title">json</span>({
+            <span class="hljs-title"><span class="hljs-built_in">msg</span></span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>,
+        })
     }
 }
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;updateMsg&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;async&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-title&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Message&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;findByIdAndUpdate&lt;/span&gt;&lpar;
-            &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;params&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;msgId&lt;/span&gt;,
-            { &lt;span class=&quot;hljs-title&quot;&gt;$set&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;body&lt;/span&gt; },
+<span class="hljs-title">export</span> <span class="hljs-title">const</span> <span class="hljs-title">updateMsg</span> <span class="hljs-operator">=</span> <span class="hljs-title">async</span> (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">try</span></span> {
+        <span class="hljs-title">await</span> <span class="hljs-title">Message</span>.<span class="hljs-title">findByIdAndUpdate</span>(
+            <span class="hljs-title">req</span>.<span class="hljs-title">params</span>.<span class="hljs-title">msgId</span>,
+            { <span class="hljs-title">$set</span>: <span class="hljs-title">req</span>.<span class="hljs-title">body</span> },
             {
-                &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;,
+                <span class="hljs-title"><span class="hljs-keyword">new</span></span>: <span class="hljs-title"><span class="hljs-literal">true</span></span>,
             }
-        &rpar;
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;200&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Message has been updated successfully!&quot;&lt;/span&gt;&rpar;
-    } &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar; {
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;500&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-            &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;,
-        }&rpar;
+        )
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(200).<span class="hljs-title">json</span>(<span class="hljs-string">"Message has been updated successfully!"</span>)
+    } <span class="hljs-title"><span class="hljs-keyword">catch</span></span> (<span class="hljs-title"><span class="hljs-keyword">error</span></span>) {
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(500).<span class="hljs-title">json</span>({
+            <span class="hljs-title"><span class="hljs-built_in">msg</span></span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>,
+        })
     }
 }
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;deleteMsg&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;async&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-title&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Message&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;findById&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;params&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;msgId&lt;/span&gt;&rpar;
+<span class="hljs-title">export</span> <span class="hljs-title">const</span> <span class="hljs-title">deleteMsg</span> <span class="hljs-operator">=</span> <span class="hljs-title">async</span> (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">try</span></span> {
+        <span class="hljs-title">let</span> <span class="hljs-title"><span class="hljs-built_in">msg</span></span> <span class="hljs-operator">=</span> <span class="hljs-title">await</span> <span class="hljs-title">Message</span>.<span class="hljs-title">findById</span>(<span class="hljs-title">req</span>.<span class="hljs-title">params</span>.<span class="hljs-title">msgId</span>)
 
-        &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;&rpar;
-            &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;404&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-                &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;msg Not Found&quot;&lt;/span&gt;,
-            }&rpar;
+        <span class="hljs-title"><span class="hljs-keyword">if</span></span> (<span class="hljs-operator">!</span><span class="hljs-title"><span class="hljs-built_in">msg</span></span>)
+            <span class="hljs-title"><span class="hljs-keyword">return</span></span> <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(404).<span class="hljs-title">json</span>({
+                <span class="hljs-title"><span class="hljs-built_in">msg</span></span>: <span class="hljs-string">"msg Not Found"</span>,
+            })
 
-        &lt;span class=&quot;hljs-title&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;remove&lt;/span&gt;&lpar;&rpar;
+        <span class="hljs-title">await</span> <span class="hljs-title"><span class="hljs-built_in">msg</span></span>.<span class="hljs-title">remove</span>()
 
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;200&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Msg has been deleted successfully!&quot;&lt;/span&gt;&rpar;
-    } &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; {
-        &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;500&rpar;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-            &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;msg&lt;/span&gt;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;,
-        }&rpar;
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(200).<span class="hljs-title">json</span>(<span class="hljs-string">"Msg has been deleted successfully!"</span>)
+    } <span class="hljs-title"><span class="hljs-keyword">catch</span></span> (<span class="hljs-title">err</span>) {
+        <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(500).<span class="hljs-title">json</span>({
+            <span class="hljs-title"><span class="hljs-built_in">msg</span></span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>,
+        })
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-testing-the-newly-created-endpoints&quot;&gt;Testing the newly created endpoints&lt;/h2&gt;
-&lt;p&gt;After adding the functions above, we&#39;re ready to start our server in order to test our endpoints. Open up your terminal, and run the following script:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm run &lt;span class=&quot;hljs-keyword&quot;&gt;start&lt;/span&gt;-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that our server is live, let&#39;s open up &lt;a target=&quot;_blank&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client&quot;&gt;Thunder client&lt;/a&gt;, or your favorite API testing tool, such as &lt;a target=&quot;_blank&quot; href=&quot;https://www.postman.com/downloads/&quot;&gt;postman&lt;/a&gt; to test our newly created endpoints.&lt;/p&gt;
-&lt;h3 id=&quot;heading-post-request&quot;&gt;Post request&lt;/h3&gt;
-&lt;p&gt;Our first test would be posting a new message to our database since its still empty.&lt;/p&gt;
-&lt;p&gt;Lets add our endpoint at the top, change the http method to POST on the left, click on the body tab, pick raw JSON option, and add the following JSON object:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-    &lt;span class=&quot;hljs-attr&quot;&gt;&quot;content&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Hey there my great friends!&quot;&lt;/span&gt;
+</code></pre><h2 id="heading-testing-the-newly-created-endpoints">Testing the newly created endpoints</h2>
+<p>After adding the functions above, we're ready to start our server in order to test our endpoints. Open up your terminal, and run the following script:</p>
+<pre><code>npm run <span class="hljs-keyword">start</span>-dev
+</code></pre><p>Now that our server is live, let's open up <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client">Thunder client</a>, or your favorite API testing tool, such as <a target="_blank" href="https://www.postman.com/downloads/">postman</a> to test our newly created endpoints.</p>
+<h3 id="heading-post-request">Post request</h3>
+<p>Our first test would be posting a new message to our database since its still empty.</p>
+<p>Lets add our endpoint at the top, change the http method to POST on the left, click on the body tab, pick raw JSON option, and add the following JSON object:</p>
+<pre><code>{
+    <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Hey there my great friends!"</span>
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then click on the send button to add our message model to our database collection. The process would look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918651102/NTZwJGp1N.PNG&quot; alt=&quot;post-req-1.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The response we&#39;ll get back would look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918680260/pbFfm-BiF.PNG&quot; alt=&quot;post-req-2.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;To see our live changes, lets navigate to our database collection going back to our cluster options in the mongoDB Atlas website and clicking on the browse collections option, which will show us our collection:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918711460/FEqQN3gi7.PNG&quot; alt=&quot;pic-11.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918723519/kxtvI0JyF.PNG&quot; alt=&quot;pic-12.PNG&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;heading-put-request&quot;&gt;PUT request&lt;/h3&gt;
-&lt;p&gt;Now that we have an existing model inside our messages collection, we can add as much as we want. Now, we&#39;ll edit an existing message like below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918873649/1ZIHg_wI_.PNG&quot; alt=&quot;put-1.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The response we&#39;ll get back would look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918904440/yGJq9NzSG.PNG&quot; alt=&quot;put-2.PNG&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;heading-delete-request&quot;&gt;Delete request&lt;/h3&gt;
-&lt;p&gt;Now we&#39;re going to delete an existing model from our collection by adding its unique ID to the request params &lpar;similar to what we did above for the PUT request&rpar;. The process will look something like below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650918922153/ue3UCbrtR.PNG&quot; alt=&quot;delete.PNG&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;heading-final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;Throughout this series, we&#39;ve learned how to create a simple RESTful API from scratch, tested it locally, and the integrated it with mongoDB to simulate CRUD operations in our platform. Knowing how to properly use a RESTful API is definitely a huge asset to add in your skill-set. Download Full project by clonning/downloading this &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration&quot;&gt;repo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
-&lt;br /&gt;
-Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2}>Creating a RESTful API easily using node.js | Part 2</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Throughout the &lt;a target=&quot;_blank&quot; href=&quot;https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1&quot;&gt;first part&lt;/a&gt;, we&#39;ve learned how to create a very basic RESTful API, which could be used to communicate with our back-end architecture and fetch data from our database. During this post, I&#39;m going to test this API locally in a simple example to understand its technical usage.&lt;/p&gt;
-&lt;h2 id=&quot;heading-helmet&quot;&gt;Helmet&lt;/h2&gt;
-&lt;p&gt;Our first step is to install a new package called helmet to our dependencies. It is used to automatically secure our app by setting various HTTP headers.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;npm&lt;/span&gt; i helmet
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-new-routes-folder&quot;&gt;New Routes folder&lt;/h2&gt;
-&lt;p&gt;Next, we&#39;re going to create a new folder called routes in the root directory and add a file inside this folder called msgs.js. This file stands for a specific route &lpar;msgs route&rpar; that contains one or more http method/s &lpar;GET, POST, PUT, DELETE&rpar;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650853612886/oWoOc31ai.PNG&quot; alt=&quot;Capture-1.PNG&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now open this newly created msgs.js route, and add the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;express&quot;&lt;/span&gt;
+</code></pre><p>Then click on the send button to add our message model to our database collection. The process would look something like this:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918651102/NTZwJGp1N.PNG" alt="post-req-1.PNG" /></p>
+<p>The response we'll get back would look something like this:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918680260/pbFfm-BiF.PNG" alt="post-req-2.PNG" /></p>
+<p>To see our live changes, lets navigate to our database collection going back to our cluster options in the mongoDB Atlas website and clicking on the browse collections option, which will show us our collection:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918711460/FEqQN3gi7.PNG" alt="pic-11.PNG" /></p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918723519/kxtvI0JyF.PNG" alt="pic-12.PNG" /></p>
+<h3 id="heading-put-request">PUT request</h3>
+<p>Now that we have an existing model inside our messages collection, we can add as much as we want. Now, we'll edit an existing message like below:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918873649/1ZIHg_wI_.PNG" alt="put-1.PNG" /></p>
+<p>The response we'll get back would look something like this:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918904440/yGJq9NzSG.PNG" alt="put-2.PNG" /></p>
+<h3 id="heading-delete-request">Delete request</h3>
+<p>Now we're going to delete an existing model from our collection by adding its unique ID to the request params (similar to what we did above for the PUT request). The process will look something like below:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650918922153/ue3UCbrtR.PNG" alt="delete.PNG" /></p>
+<h2 id="heading-final-thoughts">Final Thoughts</h2>
+<p>Throughout this series, we've learned how to create a simple RESTful API from scratch, tested it locally, and the integrated it with mongoDB to simulate CRUD operations in our platform. Knowing how to properly use a RESTful API is definitely a huge asset to add in your skill-set. Download Full project by clonning/downloading this <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing/tree/rest-api-mongodb-integration">repo</a>.</p>
+<p>I'm constantly writing new blog posts where I share my expertise &amp; skills in topics related to web development. If you're interested in such topics to boost your development career, consider following me! 😇 Or visit my personal <a target="_blank" href="https://iamshour.com">website</a>!
+<br />
+Thanks for reading, Ciao! 👋</p>
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-2}>Creating a RESTful API easily using node.js | Part 2</a></td><td><h2 id="heading-introduction">Introduction</h2>
+<p>Throughout the <a target="_blank" href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1">first part</a>, we've learned how to create a very basic RESTful API, which could be used to communicate with our back-end architecture and fetch data from our database. During this post, I'm going to test this API locally in a simple example to understand its technical usage.</p>
+<h2 id="heading-helmet">Helmet</h2>
+<p>Our first step is to install a new package called helmet to our dependencies. It is used to automatically secure our app by setting various HTTP headers.</p>
+<pre><code><span class="hljs-built_in">npm</span> i helmet
+</code></pre><h2 id="heading-new-routes-folder">New Routes folder</h2>
+<p>Next, we're going to create a new folder called routes in the root directory and add a file inside this folder called msgs.js. This file stands for a specific route (msgs route) that contains one or more http method/s (GET, POST, PUT, DELETE).</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650853612886/oWoOc31ai.PNG" alt="Capture-1.PNG" /></p>
+<p>Now open this newly created msgs.js route, and add the following:</p>
+<pre><code><span class="hljs-keyword">import</span> <span class="hljs-title">express</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"express"</span>
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;router&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;Router&lt;/span&gt;&lpar;&rpar;
+<span class="hljs-title">const</span> <span class="hljs-title">router</span> <span class="hljs-operator">=</span> <span class="hljs-title">express</span>.<span class="hljs-title">Router</span>()
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;msgs&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; [
+<span class="hljs-title">const</span> <span class="hljs-title">msgs</span> <span class="hljs-operator">=</span> [
     {
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;1&quot;&lt;/span&gt;,
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;content&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Hey there my friends!&quot;&lt;/span&gt;
+        <span class="hljs-string">"id"</span>: <span class="hljs-string">"1"</span>,
+        <span class="hljs-string">"content"</span>: <span class="hljs-string">"Hey there my friends!"</span>
     },
     {
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;2&quot;&lt;/span&gt;,
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;content&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Hello hello hello!&quot;&lt;/span&gt;
+        <span class="hljs-string">"id"</span>: <span class="hljs-string">"2"</span>,
+        <span class="hljs-string">"content"</span>: <span class="hljs-string">"Hello hello hello!"</span>
     },
     {
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;3&quot;&lt;/span&gt;,
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;content&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;I hope everything is great!&quot;&lt;/span&gt;
+        <span class="hljs-string">"id"</span>: <span class="hljs-string">"3"</span>,
+        <span class="hljs-string">"content"</span>: <span class="hljs-string">"I hope everything is great!"</span>
     },
     {
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;4&quot;&lt;/span&gt;,
-        &lt;span class=&quot;hljs-string&quot;&gt;&quot;content&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;How are you today?&quot;&lt;/span&gt;
+        <span class="hljs-string">"id"</span>: <span class="hljs-string">"4"</span>,
+        <span class="hljs-string">"content"</span>: <span class="hljs-string">"How are you today?"</span>
     }
 ];
 
-router.get&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&#39;/&#39;&lt;/span&gt;, &lpar;req, res&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    res.&lt;span class=&quot;hljs-built_in&quot;&gt;send&lt;/span&gt;&lpar;msgs&rpar;;
-}&rpar;;
+router.get(<span class="hljs-string">'/'</span>, (req, res) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    res.<span class="hljs-built_in">send</span>(msgs);
+});
 
 export default router
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-modifying-indexjs&quot;&gt;Modifying index.js&lt;/h2&gt;
-&lt;p&gt;Next, we&#39;ll modify our index.js file as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;express&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;cors&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;helmet&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;helmet&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;msgsRoute&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;./routes/msgs.js&quot;&lt;/span&gt;
+</code></pre><h2 id="heading-modifying-indexjs">Modifying index.js</h2>
+<p>Next, we'll modify our index.js file as follows:</p>
+<pre><code><span class="hljs-keyword">import</span> <span class="hljs-title">express</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"express"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">cors</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"cors"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">helmet</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"helmet"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">msgsRoute</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"./routes/msgs.js"</span>
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;&lpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;process&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;env&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 5000
+<span class="hljs-title">const</span> <span class="hljs-title">app</span> <span class="hljs-operator">=</span> <span class="hljs-title">express</span>()
+<span class="hljs-title">const</span> <span class="hljs-title">port</span> <span class="hljs-operator">=</span> <span class="hljs-title">process</span>.<span class="hljs-title">env</span>.<span class="hljs-title">PORT</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 5000
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;corsOptions&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;origin&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;*&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-string&quot;&gt;&quot;Access-Control-Allow-Origin&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-title&quot;&gt;optionSuccessStatus&lt;/span&gt;: 200,
+<span class="hljs-title">const</span> <span class="hljs-title">corsOptions</span> <span class="hljs-operator">=</span> {
+    <span class="hljs-title">origin</span>: <span class="hljs-string">"*"</span>,
+    <span class="hljs-string">"Access-Control-Allow-Origin"</span>: <span class="hljs-title"><span class="hljs-literal">true</span></span>,
+    <span class="hljs-title">optionSuccessStatus</span>: 200,
 }
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;corsOptions&lt;/span&gt;&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;urlencoded&lt;/span&gt;&lpar;{ &lt;span class=&quot;hljs-title&quot;&gt;extended&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt; }&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;helmet&lt;/span&gt;&lpar;&rpar;&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">cors</span>(<span class="hljs-title">corsOptions</span>))
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">urlencoded</span>({ <span class="hljs-title">extended</span>: <span class="hljs-title"><span class="hljs-literal">false</span></span> }))
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">json</span>())
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">helmet</span>())
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;/msgs&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;msgsRoute&lt;/span&gt;&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-string">"/msgs"</span>, <span class="hljs-title">msgsRoute</span>)
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;get&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;send&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Welcome to our RESTful API!&quot;&lt;/span&gt;&rpar;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">get</span>(<span class="hljs-string">"/"</span>, (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">send</span>(<span class="hljs-string">"Welcome to our RESTful API!"</span>)
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Something went wrong&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; 404
-    &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar;
-}&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 500&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-        &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;: {
-            &lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;,
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">const</span> <span class="hljs-title"><span class="hljs-keyword">error</span></span> <span class="hljs-operator">=</span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Something went wrong"</span>)
+    <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">=</span> 404
+    <span class="hljs-title">next</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>)
+})
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title"><span class="hljs-keyword">error</span></span>, <span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 500)
+    <span class="hljs-title">res</span>.<span class="hljs-title">json</span>({
+        <span class="hljs-title"><span class="hljs-keyword">error</span></span>: {
+            <span class="hljs-title">message</span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">message</span>,
         },
-    }&rpar;
-}&rpar;
+    })
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;listen&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;throw&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Error while connecting to the server&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;log&lt;/span&gt;&lpar;`&lt;span class=&quot;hljs-title&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;live&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;running&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;at&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;http&lt;/span&gt;:&lt;span class=&quot;hljs-comment&quot;&gt;//localhost:${port}`&rpar;&lt;/span&gt;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">listen</span>(<span class="hljs-title">port</span>, (<span class="hljs-title">err</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">if</span></span> (<span class="hljs-title">err</span>) <span class="hljs-title"><span class="hljs-keyword">throw</span></span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Error while connecting to the server"</span>)
+    <span class="hljs-title">console</span>.<span class="hljs-title">log</span>(`<span class="hljs-title">Server</span> <span class="hljs-title"><span class="hljs-keyword">is</span></span> <span class="hljs-title">live</span> <span class="hljs-title">and</span> <span class="hljs-title">running</span> <span class="hljs-title">at</span>: <span class="hljs-title">http</span>:<span class="hljs-comment">//localhost:${port}`)</span>
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The only changes we&#39;ve made from our setup in &lt;a target=&quot;_blank&quot; href=&quot;https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1&quot;&gt;part-1&lt;/a&gt; are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;calling helmet package on our app&lt;/li&gt;
-&lt;li&gt;Initializing a corsOptions object and passing it as an argument when we called cors&lpar;&rpar;&lt;/li&gt;
-&lt;li&gt;calling our msgs route to be able to consume it&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-testing-using-thunder-client&quot;&gt;Testing using Thunder client&lt;/h2&gt;
-&lt;p&gt;Last but not least, open your terminal, and type the following script:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm run &lt;span class=&quot;hljs-keyword&quot;&gt;start&lt;/span&gt;-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that our server is live, we&#39;ll test our API endpoints using any API testing tool, such as &lt;a target=&quot;_blank&quot; href=&quot;https://www.postman.com/downloads/&quot;&gt;postman&lt;/a&gt;. But I prefer to use &lt;a target=&quot;_blank&quot; href=&quot;https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client&quot;&gt;Thunder client&lt;/a&gt; which is a VS code extension for simple API testing. After installing the extension, open it from the left bar &lpar;or ctrl + shift + p and search for thunder client&rpar;, add the API endpoint on top and click send:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650853631734/BVDNcva9k.PNG&quot; alt=&quot;Capture-2.PNG&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;heading-final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;Throughout the example above, we&#39;ve tested our API locally by manually creating msgs array &lpar;simulating a database model&rpar;, and fetching its items using our API. Of course this isn&#39;t anywhere near complete, but it&#39;s just a simple starting way for beginners to understand how an API works in general. Click &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/iamshour/RESTful-api-testing&quot;&gt;here&lt;/a&gt; for source code of this blog-post.
-Throughout the next blog post, I&#39;m going to connect this API with a database &lpar;MongoDB&rpar; and use other http methods &lpar;PUT, POST, DELETE&rpar; to modify my database collection.&lt;/p&gt;
-&lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
-&lt;br /&gt;
-Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1}>Creating a RESTful API easily using node.js | Part 1</a></td><td>&lt;h2 id=&quot;heading-what-is-a-restful-api&quot;&gt;What is a RESTful API?&lt;/h2&gt;
-&lt;p&gt;First off, an API, short for Application Programming Interface, is simply a way of communication between two or more services, sometimes described as a mediator between users/clients &amp;amp; resources/services they request.
-RESTful APIs, however, is a set of principles that conforms to the constraints of REST architecture style and thus allowing for integration with RESTful web services.&lt;/p&gt;
-&lt;h2 id=&quot;heading-step1-initializing-a-new-project&quot;&gt;Step.1: Initializing a new project&lt;/h2&gt;
-&lt;p&gt;The very first step is to create an empty folder manually in the directory of your choice &lpar;Using Right-click&rpar;, or via Terminal/Bash:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mkdir myProject
+<span class="hljs-title">export</span> <span class="hljs-title">default</span> <span class="hljs-title">app</span>
+</code></pre><p>The only changes we've made from our setup in <a target="_blank" href="https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1">part-1</a> are:</p>
+<ul>
+<li>calling helmet package on our app</li>
+<li>Initializing a corsOptions object and passing it as an argument when we called cors()</li>
+<li>calling our msgs route to be able to consume it</li>
+</ul>
+<h2 id="heading-testing-using-thunder-client">Testing using Thunder client</h2>
+<p>Last but not least, open your terminal, and type the following script:</p>
+<pre><code>npm run <span class="hljs-keyword">start</span>-dev
+</code></pre><p>Now that our server is live, we'll test our API endpoints using any API testing tool, such as <a target="_blank" href="https://www.postman.com/downloads/">postman</a>. But I prefer to use <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client">Thunder client</a> which is a VS code extension for simple API testing. After installing the extension, open it from the left bar (or ctrl + shift + p and search for thunder client), add the API endpoint on top and click send:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650853631734/BVDNcva9k.PNG" alt="Capture-2.PNG" /></p>
+<h2 id="heading-final-thoughts">Final Thoughts</h2>
+<p>Throughout the example above, we've tested our API locally by manually creating msgs array (simulating a database model), and fetching its items using our API. Of course this isn't anywhere near complete, but it's just a simple starting way for beginners to understand how an API works in general. Click <a target="_blank" href="https://github.com/iamshour/RESTful-api-testing">here</a> for source code of this blog-post.
+Throughout the next blog post, I'm going to connect this API with a database (MongoDB) and use other http methods (PUT, POST, DELETE) to modify my database collection.</p>
+<p>I'm constantly writing new blog posts where I share my expertise &amp; skills in topics related to web development. If you're interested in such topics to boost your development career, consider following me! 😇 Or visit my personal <a target="_blank" href="https://iamshour.com">website</a>!
+<br />
+Thanks for reading, Ciao! 👋</p>
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/creating-a-restful-api-easily-using-nodejs-or-part-1}>Creating a RESTful API easily using node.js | Part 1</a></td><td><h2 id="heading-what-is-a-restful-api">What is a RESTful API?</h2>
+<p>First off, an API, short for Application Programming Interface, is simply a way of communication between two or more services, sometimes described as a mediator between users/clients &amp; resources/services they request.
+RESTful APIs, however, is a set of principles that conforms to the constraints of REST architecture style and thus allowing for integration with RESTful web services.</p>
+<h2 id="heading-step1-initializing-a-new-project">Step.1: Initializing a new project</h2>
+<p>The very first step is to create an empty folder manually in the directory of your choice (Using Right-click), or via Terminal/Bash:</p>
+<pre><code>mkdir myProject
 cd ./myProject
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then setting up a new empty npm package using legacy init &lpar;-y for ignoring questions&rpar;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm &lt;span class=&quot;hljs-keyword&quot;&gt;init&lt;/span&gt; -y
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that you first have to have node.js installed on your machine. Another side note is that you can edit the package.json file and add your specified info such your name &lpar;author&rpar;, git repo, description, etc.&lt;/p&gt;
-&lt;h2 id=&quot;heading-step2-installing-necessary-dependencies&quot;&gt;Step.2: Installing necessary dependencies&lt;/h2&gt;
-&lt;p&gt;Although I&#39;ll be using the most basic setup to create a very simple RESTful api, you can definitely add any other package you find useful. The two main packages I&#39;ll be using are express, which is a minimal node.js framework used to simplify our workload, and CORS which handles Cross-Origin-Resource-Sharing.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;npm&lt;/span&gt; i express cors
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I&#39;ll also be using nodemon, which is a tool that automatically restarts our node application when file changes in the directory are detected:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm i &lt;span class=&quot;hljs-operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;-&lt;/span&gt;save&lt;span class=&quot;hljs-operator&quot;&gt;-&lt;/span&gt;dev nodemon
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-step-3-creating-an-entry-point&quot;&gt;Step. 3: Creating an entry point&lt;/h2&gt;
-&lt;p&gt;The next step is to create an entry point for our node.js application &lpar;usually named index.js&rpar; inside the root of our project. Then modifying our package.json file as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;name&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;project-name&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;version&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;description&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Add project description here if you want to&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;main&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;index.js&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;type&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;module&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;scripts&quot;&lt;/span&gt;: {
-    &lt;span class=&quot;hljs-attr&quot;&gt;&quot;start&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;node index.js&quot;&lt;/span&gt;,
-    &lt;span class=&quot;hljs-attr&quot;&gt;&quot;start-dev&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;nodemon index.js&quot;&lt;/span&gt;,
+</code></pre><p>Then setting up a new empty npm package using legacy init (-y for ignoring questions):</p>
+<pre><code>npm <span class="hljs-keyword">init</span> -y
+</code></pre><p>Note that you first have to have node.js installed on your machine. Another side note is that you can edit the package.json file and add your specified info such your name (author), git repo, description, etc.</p>
+<h2 id="heading-step2-installing-necessary-dependencies">Step.2: Installing necessary dependencies</h2>
+<p>Although I'll be using the most basic setup to create a very simple RESTful api, you can definitely add any other package you find useful. The two main packages I'll be using are express, which is a minimal node.js framework used to simplify our workload, and CORS which handles Cross-Origin-Resource-Sharing.</p>
+<pre><code><span class="hljs-built_in">npm</span> i express cors
+</code></pre><p>I'll also be using nodemon, which is a tool that automatically restarts our node application when file changes in the directory are detected:</p>
+<pre><code>npm i <span class="hljs-operator">-</span><span class="hljs-operator">-</span>save<span class="hljs-operator">-</span>dev nodemon
+</code></pre><h2 id="heading-step-3-creating-an-entry-point">Step. 3: Creating an entry point</h2>
+<p>The next step is to create an entry point for our node.js application (usually named index.js) inside the root of our project. Then modifying our package.json file as follows:</p>
+<pre><code>{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"project-name"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Add project description here if you want to"</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"index.js"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"module"</span>,
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"start"</span>: <span class="hljs-string">"node index.js"</span>,
+    <span class="hljs-attr">"start-dev"</span>: <span class="hljs-string">"nodemon index.js"</span>,
   },
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;keywords&quot;&lt;/span&gt;: [],
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;author&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;your-name&quot;&lt;/span&gt;,
-  &lt;span class=&quot;hljs-attr&quot;&gt;&quot;license&quot;&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;ISC&quot;&lt;/span&gt;
+  <span class="hljs-attr">"keywords"</span>: [],
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">"your-name"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"ISC"</span>
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice that in order to run our application locally &lpar;development environment&rpar;, We&#39;ll use the second script &lpar;start-dev&rpar;, whilst the first one is only for production environment. Another side note is that adding &quot;type&quot;: &quot;module&quot; to the package.json enables ES6 features.&lt;/p&gt;
-&lt;p&gt;Next, and before starting our app, open the newly created index.js file and add the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;express&quot;&lt;/span&gt;
-&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;cors&quot;&lt;/span&gt;
+</code></pre><p>Notice that in order to run our application locally (development environment), We'll use the second script (start-dev), whilst the first one is only for production environment. Another side note is that adding "type": "module" to the package.json enables ES6 features.</p>
+<p>Next, and before starting our app, open the newly created index.js file and add the following:</p>
+<pre><code><span class="hljs-keyword">import</span> <span class="hljs-title">express</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"express"</span>
+<span class="hljs-title"><span class="hljs-keyword">import</span></span> <span class="hljs-title">cors</span> <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"cors"</span>
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;&lpar;&rpar;
+<span class="hljs-title">const</span> <span class="hljs-title">app</span> <span class="hljs-operator">=</span> <span class="hljs-title">express</span>()
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;urlencoded&lt;/span&gt;&lpar;{ &lt;span class=&quot;hljs-title&quot;&gt;extended&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt; }&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;express&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;&rpar;&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;cors&lt;/span&gt;&lpar;&rpar;&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">urlencoded</span>({ <span class="hljs-title">extended</span>: <span class="hljs-title"><span class="hljs-literal">false</span></span> }))
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">express</span>.<span class="hljs-title">json</span>())
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>(<span class="hljs-title">cors</span>())
 
-&lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;process&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;env&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 5000
+<span class="hljs-title">const</span> <span class="hljs-title">port</span> <span class="hljs-operator">=</span> <span class="hljs-title">process</span>.<span class="hljs-title">env</span>.<span class="hljs-title">PORT</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 5000
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;get&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;send&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Welcome to our new custom API!&quot;&lt;/span&gt;&rpar;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">get</span>(<span class="hljs-string">"/"</span>, (<span class="hljs-title">req</span>, <span class="hljs-title">res</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">send</span>(<span class="hljs-string">"Welcome to our new custom API!"</span>)
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Something went wrong&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; 404
-    &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;&rpar;
-}&rpar;
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;use&lt;/span&gt;&lpar;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;req&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;, &lt;span class=&quot;hljs-title&quot;&gt;next&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;|&lt;/span&gt; 500&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;res&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;json&lt;/span&gt;&lpar;{
-        &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;: {
-            &lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;error&lt;/span&gt;&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;message&lt;/span&gt;,
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">const</span> <span class="hljs-title"><span class="hljs-keyword">error</span></span> <span class="hljs-operator">=</span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Something went wrong"</span>)
+    <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">=</span> 404
+    <span class="hljs-title">next</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>)
+})
+<span class="hljs-title">app</span>.<span class="hljs-title">use</span>((<span class="hljs-title"><span class="hljs-keyword">error</span></span>, <span class="hljs-title">req</span>, <span class="hljs-title">res</span>, <span class="hljs-title">next</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title">res</span>.<span class="hljs-title">status</span>(<span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">status</span> <span class="hljs-operator">|</span><span class="hljs-operator">|</span> 500)
+    <span class="hljs-title">res</span>.<span class="hljs-title">json</span>({
+        <span class="hljs-title"><span class="hljs-keyword">error</span></span>: {
+            <span class="hljs-title">message</span>: <span class="hljs-title"><span class="hljs-keyword">error</span></span>.<span class="hljs-title">message</span>,
         },
-    }&rpar;
-}&rpar;
+    })
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;listen&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-title&quot;&gt;port&lt;/span&gt;, &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;/span&gt; &lpar;&lt;span class=&quot;hljs-title&quot;&gt;err&lt;/span&gt;&rpar; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;throw&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;Error&lt;/span&gt;&lt;/span&gt;&lpar;&lt;span class=&quot;hljs-string&quot;&gt;&quot;Error while connecting to the server&quot;&lt;/span&gt;&rpar;
-    &lt;span class=&quot;hljs-title&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;hljs-title&quot;&gt;log&lt;/span&gt;&lpar;`&lt;span class=&quot;hljs-title&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;is&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;live&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;running&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;at&lt;/span&gt;: &lt;span class=&quot;hljs-title&quot;&gt;http&lt;/span&gt;:&lt;span class=&quot;hljs-comment&quot;&gt;//localhost:${port}`&rpar;&lt;/span&gt;
-}&rpar;
+<span class="hljs-title">app</span>.<span class="hljs-title">listen</span>(<span class="hljs-title">port</span>, (<span class="hljs-title">err</span>) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+    <span class="hljs-title"><span class="hljs-keyword">if</span></span> (<span class="hljs-title">err</span>) <span class="hljs-title"><span class="hljs-keyword">throw</span></span> <span class="hljs-title"><span class="hljs-keyword">new</span></span> <span class="hljs-title"><span class="hljs-built_in">Error</span></span>(<span class="hljs-string">"Error while connecting to the server"</span>)
+    <span class="hljs-title">console</span>.<span class="hljs-title">log</span>(`<span class="hljs-title">Server</span> <span class="hljs-title"><span class="hljs-keyword">is</span></span> <span class="hljs-title">live</span> <span class="hljs-title">and</span> <span class="hljs-title">running</span> <span class="hljs-title">at</span>: <span class="hljs-title">http</span>:<span class="hljs-comment">//localhost:${port}`)</span>
+})
 
-&lt;span class=&quot;hljs-title&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;app&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Throughout the above setup, we initiated our app using express, called some useful express methods, and used the cors package which we installed earlier. We also assigned a port variable, created a welcome message to appear when calling our API, and simply handled any unexpected future errors. Last but not least, we called the listen method in order to start a server on our custom port.&lt;/p&gt;
-&lt;p&gt;Now fire the following command on your terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npm run &lt;span class=&quot;hljs-keyword&quot;&gt;start&lt;/span&gt;-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Pressing ctrl + link provided on our terminal will fire a localhost server as the following:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1650329994522/8zYmTCd8r.png&quot; alt=&quot;localhost.png&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;heading-final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;Throughout this example, we created a very basic RESTful API, which of course isn&#39;t anywhere near complete, but a good building block for an API. In the upcoming part, we&#39;ll add more functionalities to our API, and test it with and without a connection to a database&lt;/p&gt;
-&lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
-&lt;br /&gt;
-Thanks for reading, Ciao! 👋&lt;/p&gt;
-</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily}>Send emails from your website to any user super easily!</a></td><td>&lt;h2 id=&quot;heading-introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;First of all, let me give you a heads up of what I&#39;m going to be talking about, and the purpose of this blog. 
-In today&#39;s world, almost every website or web-app sends all kinds of emails to their respective users, each with a distinct functionality or purpose.&lt;/p&gt;
-&lt;h2 id=&quot;heading-purpose-of-sending-such-emails&quot;&gt;Purpose of sending such emails&lt;/h2&gt;
-&lt;p&gt;Some examples of those emails are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;User verification emails &lpar;authentication&rpar;&lt;/li&gt;
-&lt;li&gt;Reset authentication passwords&lt;/li&gt;
-&lt;li&gt;Marketing emails&lt;/li&gt;
-&lt;li&gt;Subscribing to a newsletter&lt;/li&gt;
-&lt;li&gt;Responding to a report case &lpar;ticket&rpar; &lt;/li&gt;
-&lt;li&gt;Responding to a contact-me form&lt;/li&gt;
-&lt;li&gt;Transactional emails&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As you can tell, there are a plenty of use cases where it&#39;s almost mandatory to send emails to our users right from our platform. But how can we implement an easy way to do so, without so much hassle?&lt;/p&gt;
-&lt;h2 id=&quot;heading-what-is-nodemailer&quot;&gt;What is Nodemailer?&lt;/h2&gt;
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://nodemailer.com/about/&quot;&gt;Nodemailer&lt;/a&gt;, by their own definition, is a module for Node.js applications to allow easy as cake email sending. It is the solution most users turn to by default.&lt;/p&gt;
-&lt;h2 id=&quot;heading-project-implementation&quot;&gt;Project Implementation&lt;/h2&gt;
-&lt;p&gt;To start with this quick project, you must have a node.js application pre-set and running already. If you&#39;re not very familiar with node.js and need a little help setting up a simple back-end environment, check out my upcoming blog to help you out.&lt;/p&gt;
-&lt;p&gt;Next up, install Nodemailer in your root directory:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;npm&lt;/span&gt; i nodemailer
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now you need to use an email delivery service, which provides you with a simple way to send those quick emails to your clients/visitors. There are plenty of those services available, with each having it&#39;s own features and pros over the other. The most common ones are Sendgrid, SendInBlue, HubSpot, omniSend, etc.
-The one I&#39;ll be using is going to be SendIbBlue, due to the ease of their service, and their pretty good customer support, in case of any unexpected issue. 
-Steps for creating an account:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Visit their official &lt;a target=&quot;_blank&quot; href=&quot;https://www.sendinblue.com/&quot;&gt;website&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Click on the sign up button on the top right corner&lt;/li&gt;
-&lt;li&gt;Go to the SMTP &amp;amp; API tab, &lt;a target=&quot;_blank&quot; href=&quot;https://account.sendinblue.com/advanced/api#tab-account-nodejs-sample&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Keep this tab open for later on, where we&#39;ll be using an API key or SMTP Server necessary for the setup later&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;heading-modifying-our-nodejs-app&quot;&gt;Modifying our node.js app&lt;/h2&gt;
-&lt;p&gt;Now in order to see the magic happen, we need to modify our node.js app. 
+<span class="hljs-title">export</span> <span class="hljs-title">default</span> <span class="hljs-title">app</span>
+</code></pre><p>Throughout the above setup, we initiated our app using express, called some useful express methods, and used the cors package which we installed earlier. We also assigned a port variable, created a welcome message to appear when calling our API, and simply handled any unexpected future errors. Last but not least, we called the listen method in order to start a server on our custom port.</p>
+<p>Now fire the following command on your terminal:</p>
+<pre><code>npm run <span class="hljs-keyword">start</span>-dev
+</code></pre><p>Pressing ctrl + link provided on our terminal will fire a localhost server as the following:</p>
+<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1650329994522/8zYmTCd8r.png" alt="localhost.png" /></p>
+<h2 id="heading-final-thoughts">Final Thoughts</h2>
+<p>Throughout this example, we created a very basic RESTful API, which of course isn't anywhere near complete, but a good building block for an API. In the upcoming part, we'll add more functionalities to our API, and test it with and without a connection to a database</p>
+<p>I'm constantly writing new blog posts where I share my expertise &amp; skills in topics related to web development. If you're interested in such topics to boost your development career, consider following me! 😇 Or visit my personal <a target="_blank" href="https://iamshour.com">website</a>!
+<br />
+Thanks for reading, Ciao! 👋</p>
+</td><td></td></tr><tr><td><a href={https://blog.iamshour.com/send-emails-from-your-website-to-any-user-super-easily}>Send emails from your website to any user super easily!</a></td><td><h2 id="heading-introduction">Introduction</h2>
+<p>First of all, let me give you a heads up of what I'm going to be talking about, and the purpose of this blog. 
+In today's world, almost every website or web-app sends all kinds of emails to their respective users, each with a distinct functionality or purpose.</p>
+<h2 id="heading-purpose-of-sending-such-emails">Purpose of sending such emails</h2>
+<p>Some examples of those emails are:</p>
+<ul>
+<li>User verification emails (authentication)</li>
+<li>Reset authentication passwords</li>
+<li>Marketing emails</li>
+<li>Subscribing to a newsletter</li>
+<li>Responding to a report case (ticket) </li>
+<li>Responding to a contact-me form</li>
+<li>Transactional emails</li>
+</ul>
+<p>As you can tell, there are a plenty of use cases where it's almost mandatory to send emails to our users right from our platform. But how can we implement an easy way to do so, without so much hassle?</p>
+<h2 id="heading-what-is-nodemailer">What is Nodemailer?</h2>
+<p><a target="_blank" href="https://nodemailer.com/about/">Nodemailer</a>, by their own definition, is a module for Node.js applications to allow easy as cake email sending. It is the solution most users turn to by default.</p>
+<h2 id="heading-project-implementation">Project Implementation</h2>
+<p>To start with this quick project, you must have a node.js application pre-set and running already. If you're not very familiar with node.js and need a little help setting up a simple back-end environment, check out my upcoming blog to help you out.</p>
+<p>Next up, install Nodemailer in your root directory:</p>
+<pre><code><span class="hljs-built_in">npm</span> i nodemailer
+</code></pre><p>Now you need to use an email delivery service, which provides you with a simple way to send those quick emails to your clients/visitors. There are plenty of those services available, with each having it's own features and pros over the other. The most common ones are Sendgrid, SendInBlue, HubSpot, omniSend, etc.
+The one I'll be using is going to be SendIbBlue, due to the ease of their service, and their pretty good customer support, in case of any unexpected issue. 
+Steps for creating an account:</p>
+<ul>
+<li>Visit their official <a target="_blank" href="https://www.sendinblue.com/">website</a></li>
+<li>Click on the sign up button on the top right corner</li>
+<li>Go to the SMTP &amp; API tab, <a target="_blank" href="https://account.sendinblue.com/advanced/api#tab-account-nodejs-sample">here</a></li>
+<li>Keep this tab open for later on, where we'll be using an API key or SMTP Server necessary for the setup later</li>
+</ul>
+<h2 id="heading-modifying-our-nodejs-app">Modifying our node.js app</h2>
+<p>Now in order to see the magic happen, we need to modify our node.js app. 
 First, Create a file inside the root directory, and call it whatever you like, ex. sendMail.js.
-Next, import nodemailer as below &lpar;P.S. To use import method over require, go to package.json file, and add the option, &quot;type&quot;: &quot;module&quot;&rpar;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; nodemailer &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&#39;nodemailer&#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, we&#39;ll create and export a function, which contains the following: &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Creating a transport using nodemailer&#39;s createTransport&lpar;&rpar; method, while passing server info, which we got from sendInBlue as an argument&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Creating a mailOptions object, which contains our email options such as sender email, receiver email, subject of the email, and the email itself &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;Calling SendMail&lpar;&rpar; method on the transport while passing the above options as an argument&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; nodemailer &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;nodemailer&quot;&lt;/span&gt;
+Next, import nodemailer as below (P.S. To use import method over require, go to package.json file, and add the option, "type": "module")</p>
+<pre><code><span class="hljs-keyword">import</span> nodemailer <span class="hljs-keyword">from</span> <span class="hljs-string">'nodemailer'</span>
+</code></pre><p>Then, we'll create and export a function, which contains the following: </p>
+<ol>
+<li><p>Creating a transport using nodemailer's createTransport() method, while passing server info, which we got from sendInBlue as an argument</p>
+</li>
+<li><p>Creating a mailOptions object, which contains our email options such as sender email, receiver email, subject of the email, and the email itself </p>
+</li>
+<li>Calling SendMail() method on the transport while passing the above options as an argument</li>
+</ol>
+<pre><code><span class="hljs-keyword">import</span> nodemailer <span class="hljs-keyword">from</span> <span class="hljs-string">"nodemailer"</span>
 
-&lt;span class=&quot;hljs-comment&quot;&gt;//Note that I stored my credentials in my .env file&lt;/span&gt;
-&lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; { SMTP_KEY, SMTP_PASS, SENDER_EMAIL, REPORT_PASS } = process.env
+<span class="hljs-comment">//Note that I stored my credentials in my .env file</span>
+<span class="hljs-keyword">const</span> { SMTP_KEY, SMTP_PASS, SENDER_EMAIL, REPORT_PASS } = process.env
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; sendReportMail = &lt;span class=&quot;hljs-function&quot;&gt;&lpar;&lt;span class=&quot;hljs-params&quot;&gt;to, mailContent&lt;/span&gt;&rpar; =&amp;gt;&lt;/span&gt; {
-    &lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; smtpTransport = nodemailer.createTransport&lpar;{
-        host: &lt;span class=&quot;hljs-string&quot;&gt;&quot;smtp-relay.sendinblue.com&quot;&lt;/span&gt;,
-        service: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Sendinblue&quot;&lt;/span&gt;,
-        port: &lt;span class=&quot;hljs-number&quot;&gt;587&lt;/span&gt;,
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> sendReportMail = <span class="hljs-function">(<span class="hljs-params">to, mailContent</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> smtpTransport = nodemailer.createTransport({
+        host: <span class="hljs-string">"smtp-relay.sendinblue.com"</span>,
+        service: <span class="hljs-string">"Sendinblue"</span>,
+        port: <span class="hljs-number">587</span>,
         auth: {
             user: SMTP_KEY,
             pass: SMTP_PASS,
         },
-    }&rpar;
+    })
 
-    &lt;span class=&quot;hljs-keyword&quot;&gt;const&lt;/span&gt; mailOptions = {
-        &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt;: SENDER_EMAIL,
+    <span class="hljs-keyword">const</span> mailOptions = {
+        <span class="hljs-keyword">from</span>: SENDER_EMAIL,
         to: [to, SENDER_EMAIL],
-        subject: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Email subject&quot;&lt;/span&gt;,
-        html: &lt;span class=&quot;hljs-string&quot;&gt;`
-            &amp;lt;div &amp;gt;
-                    Dear &lt;span class=&quot;hljs-subst&quot;&gt;${mailContent?.name}&lt;/span&gt;,
-                    Thanks for contacting us! We&#39;ll make sure to get back in touch as soon as possible!
-            &amp;lt;/div&amp;gt;
-        `&lt;/span&gt;,
+        subject: <span class="hljs-string">"Email subject"</span>,
+        html: <span class="hljs-string">`
+            &lt;div &gt;
+                    Dear <span class="hljs-subst">${mailContent?.name}</span>,
+                    Thanks for contacting us! We'll make sure to get back in touch as soon as possible!
+            &lt;/div&gt;
+        `</span>,
     }
 
-    smtpTransport.sendMail&lpar;mailOptions, &lt;span class=&quot;hljs-function&quot;&gt;&lpar;&lt;span class=&quot;hljs-params&quot;&gt;err, info&lt;/span&gt;&rpar; =&amp;gt;&lt;/span&gt; {
-        &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lpar;err&rpar; &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; err
-        &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; info
-    }&rpar;
+    smtpTransport.sendMail(mailOptions, <span class="hljs-function">(<span class="hljs-params">err, info</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> err
+        <span class="hljs-keyword">return</span> info
+    })
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Last but not least, we can use this function inside any router controller to easily send user emails, as the example below:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;export const sendReport &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; async &lpar;req, res&rpar; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
-&lt;span class=&quot;hljs-comment&quot;&gt;// Getting report data, which the user himself added, while we received this data with a POST request&lt;/span&gt;
-    const { firstName, lastName, subject, message } &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; req.body
+</code></pre><p>Last but not least, we can use this function inside any router controller to easily send user emails, as the example below:</p>
+<pre><code>export const sendReport <span class="hljs-operator">=</span> async (req, res) <span class="hljs-operator">=</span><span class="hljs-operator">&gt;</span> {
+<span class="hljs-comment">// Getting report data, which the user himself added, while we received this data with a POST request</span>
+    const { firstName, lastName, subject, message } <span class="hljs-operator">=</span> req.body
 
-    &lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt; {
+    <span class="hljs-keyword">try</span> {
 
-            const mailContent &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; {
+            const mailContent <span class="hljs-operator">=</span> {
                 name: `${firstName} ${lastName}`,
                 subject,
                 message,
             }
 
-            sendReportMail&lpar;user?.email, mailContent&rpar;
+            sendReportMail(user?.email, mailContent)
 
-            res.status&lpar;&lt;span class=&quot;hljs-number&quot;&gt;200&lt;/span&gt;&rpar;.json&lpar;{
+            res.status(<span class="hljs-number">200</span>).json({
                 message:
-                    &lt;span class=&quot;hljs-string&quot;&gt;&quot;Report submitted successfully! Please check your email for confirmation.&quot;&lt;/span&gt;,
-            }&rpar;
+                    <span class="hljs-string">"Report submitted successfully! Please check your email for confirmation."</span>,
+            })
         }
-    } &lt;span class=&quot;hljs-keyword&quot;&gt;catch&lt;/span&gt; &lpar;err&rpar; {
-        &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lpar;err?.errors?.email?.&lt;span class=&quot;hljs-built_in&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;ValidatorError&quot;&lt;/span&gt;&rpar; {
-            res.status&lpar;&lt;span class=&quot;hljs-number&quot;&gt;403&lt;/span&gt;&rpar;.json&lpar;{
-                message: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Please enter a valid email&quot;&lt;/span&gt;,
-            }&rpar;
-        } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
-            res.status&lpar;&lt;span class=&quot;hljs-number&quot;&gt;500&lt;/span&gt;&rpar;.json&lpar;{
-                message: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Server Error&quot;&lt;/span&gt;,
-            }&rpar;
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-keyword">if</span> (err?.errors?.email?.<span class="hljs-built_in">name</span> <span class="hljs-operator">=</span><span class="hljs-operator">=</span><span class="hljs-operator">=</span> <span class="hljs-string">"ValidatorError"</span>) {
+            res.status(<span class="hljs-number">403</span>).json({
+                message: <span class="hljs-string">"Please enter a valid email"</span>,
+            })
+        } <span class="hljs-keyword">else</span> {
+            res.status(<span class="hljs-number">500</span>).json({
+                message: <span class="hljs-string">"Server Error"</span>,
+            })
         }
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;heading-final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;By Implementing the above steps correctly, you could hugely benefit in any of your projects that requires authentication, or if you simply want to send quick marketing emails to your end users. The use cases are definitely much more than that, but in short this would be a great tool to at least try.&lt;/p&gt;
-&lt;p&gt;I&#39;m constantly writing new blog posts where I share my expertise &amp;amp; skills in topics related to web development. If you&#39;re interested in such topics to boost your development career, consider following me! 😇 Or visit my personal &lt;a target=&quot;_blank&quot; href=&quot;https://iamshour.com&quot;&gt;website&lt;/a&gt;!
-&lt;br /&gt;
-Thanks for reading, Ciao! 👋&lt;/p&gt;
+</code></pre><h2 id="heading-final-thoughts">Final Thoughts</h2>
+<p>By Implementing the above steps correctly, you could hugely benefit in any of your projects that requires authentication, or if you simply want to send quick marketing emails to your end users. The use cases are definitely much more than that, but in short this would be a great tool to at least try.</p>
+<p>I'm constantly writing new blog posts where I share my expertise &amp; skills in topics related to web development. If you're interested in such topics to boost your development career, consider following me! 😇 Or visit my personal <a target="_blank" href="https://iamshour.com">website</a>!
+<br />
+Thanks for reading, Ciao! 👋</p>
 </td><td></td></tr><!-- BLOG-POST-LIST:END -->
 </table>
 
