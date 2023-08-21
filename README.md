@@ -38,14 +38,19 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
 <br/>
 
 - 🌐 &nbsp; Front-end: &nbsp;
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&link=https://reactjs.org/)](https://reactjs.org/)
+  [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&link=https://nextjs.org/)](https://nextjs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E&link=https://vitejs.dev/)](https://vitejs.dev/)
+  [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&link=https://www.typescriptlang.org/)](https://www.typescriptlang.org/)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&link=https://www.javascript.com/)](https://www.javascript.com/)
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&link=https://html5.org/)](https://html5.org/)
   [![MARKDOWN](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white&link=https://www.markdownguide.org/)](https://www.markdownguide.org/)
-  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&link=https://www.w3.org/Style/CSS/Overview.en.html)](https://www.w3.org/Style/CSS/Overview.en.html)
-  [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&link=https://www.javascript.com/)](https://www.javascript.com/)
-  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&link=https://reactjs.org/)](https://reactjs.org/)
   [![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white&link=https://redux.js.org/)](https://redux.js.org/)
-  [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&link=https://nextjs.org/)](https://nextjs.org/)
-  [![Gatsby.js](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white&link=https://www.gatsbyjs.com/)](https://www.gatsbyjs.com/)
+  [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white&link=https://reactrouter.com/)](https://reactrouter.com/)
+  [![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=React_Query&logoColor=white&link=https://tanstack.com/query/v3/)](https://tanstack.com/query/v3/)
+  [![Socket IO](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white&link=https://socket.io/)](https://socket.io/)
+  [![Storybook](https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white&link=https://storybook.js.org/)](https://storybook.js.org/)
+  [![Strapi](https://img.shields.io/badge/strapi-2F2E8B?style=for-the-badge&logo=strapi&logoColor=white&link=https://strapi.io/)](https://strapi.io/)
 
 - 🛢 &nbsp; Back-end: &nbsp;
   [![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&link=https://nodejs.org/)](https://nodejs.org/)
@@ -53,14 +58,27 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
   [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white&link=https://www.mongodb.com/)](https://www.mongodb.com/)
   [![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=JSON&logoColor=white&link=https://www.json.org/)](https://www.json.org/)
   [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white&link=https://jwt.io/)](https://jwt.io/)
-  [![Npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/)](https://www.npmjs.com/)
-  [![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white&link=https://stripe.com/)](https://stripe.com/)
+  [![Socket IO](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white&link=https://socket.io/)](https://socket.io/)
 
-- 🖌 &nbsp; UI Frameworks: &nbsp;
+- 🖌 &nbsp; Styling & UI Libraries: &nbsp;
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&link=https://tailwindcss.com/)](https://tailwindcss.com/)
   [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white&link=https://sass-lang.com/)](https://sass-lang.com/)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&link=https://www.w3.org/Style/CSS/Overview.en.html)](https://www.w3.org/Style/CSS/Overview.en.html)
+  [![Chakra UI](https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white&link=https://chakra-ui.com/)](https://chakra-ui.com/)
   [![Material_UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white&link=https://mui.com/)](https://mui.com/)
   [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&link=https://react-bootstrap.github.io/)](https://react-bootstrap.github.io/)
   [![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white&link=https://www.styled-components.com/)](https://www.styled-components.com/)
+
+- 🧪 &nbsp; Dev Tools: &nbsp;
+  [![Npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/)](https://www.npmjs.com/)
+  [![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white&link=https://yarnpkg.com/)](https://yarnpkg.com/)
+  [![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white&link=https://webpack.js.org/)](https://webpack.js.org/)
+  [![ts-node](https://img.shields.io/badge/ts--node-3178C6?style=for-the-badge&logo=ts-node&logoColor=white&link=https://www.npmjs.com/ts-node)](https://www.npmjs.com/ts-node)
+  [![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white&link=https://eslint.org/)](https://eslint.org/)
+  [![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E&link=https://prettier.io/)](https://prettier.io/)
+  [![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white&link=https://jestjs.io/)](https://jestjs.io/)
+  [![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white&link=https://www.cypress.io/)](https://www.cypress.io/)
+
 
 - 💻 &nbsp; Deployment: &nbsp;
   [![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&link=https://git-scm.com/)](https://git-scm.com/)
@@ -70,13 +88,17 @@ I'm a problem solving enthusiast, passionate for learning new languages & framew
   [![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black&link=https://firebase.google.com/)](https://firebase.google.com/)
   [![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&link=https://www.heroku.com/)](https://www.heroku.com/)
 
-- 🔧 &nbsp; Tools: &nbsp;
+- ✒️ &nbsp; UI/UX Design: &nbsp;
+  [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&link=https://www.figma.com/)](https://www.figma.com/)
+  [![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6&link=https://www.adobe.com/)](https://www.adobe.com/)
+  [![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white&link=https://dribbble.com/iamshour)](https://dribbble.com/iamshour)
+
+- 🔧 &nbsp; Other Tools: &nbsp;
   [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white&link=https://code.visualstudio.com/)](https://code.visualstudio.com/)
-  [![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important&link=https://www.sublimetext.com/)](https://www.sublimetext.com/)
   [![codesandbox](https://img.shields.io/badge/Codesandbox-000000?style=for-the-badge&logo=CodeSandbox&logoColor=white&link=https://codesandbox.io/)](https://codesandbox.io/)
   [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white&link=https://www.postman.com/)](https://www.postman.com/)
-  [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&link=https://www.figma.com/)](https://www.figma.com/)
-
+  [![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white&link=https://www.notion.so/)](https://www.notion.so/)
+  
 <br />
 <br />
 
